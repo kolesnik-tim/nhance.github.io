@@ -1,12 +1,13 @@
 html
 body
   font-family: 'Open Sans', sans-serif
-  font-size: 18px
+  font-size: 16px
+  line-height: 1
   box-sizing: border-box
   position: relative
 .container
   width: 100% !important
-  max-width: 1165px
+  max-width: 1250px
   box-sizing: border-box
   +r(1200)
     padding: 0 15px
@@ -31,3 +32,17 @@ textarea
 		display: none !important
 
 
+.btn
+  font-size: 12px
+  font-weight: bold
+  line-height: 1
+  color: $white
+  padding: 12px 24px
+  text-transform: uppercase
+  display: inline-block
+  &-primary
+    border-radius: 17.5px
+    background-color: $cerise
+  &-secondary
+    border-radius: 17.5px
+    border: solid 1px $pinkish-grey
