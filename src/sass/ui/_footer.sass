@@ -1,1 +1,72 @@
 .footer
+  background-color: $dark-three
+  padding: 105px 0
+  &__logo
+    +center-y
+    padding: 25px 0
+    position: relative
+    &:before
+      content: ''
+      width: 62.5px
+      height: 1px
+      background-color: $slate-grey
+      position: absolute
+      bottom: 0
+      left: 0
+    img
+      height: 50px
+      margin-right: 20px
+    p
+      font-size: 14px
+      line-height: 1.43
+      color: $white
+      span
+        font-size: 12px
+        color: $pinkish-grey
+        display: block
+  &__contacts
+    padding: 25px 0 30px
+    p
+      font-size: 14px
+      line-height: 1.43
+      color: $pinkish-grey
+  &__social
+    display: flex
+    a
+      margin-right: 15px
+  &__nav
+    display: flex
+    justify-content: space-between
+    &__block
+      &-last
+        width: 215px
+        +r(1300)
+          width: auto
+      h3
+        margin-bottom: 30px
+        font-size: 16px
+        font-weight: 600
+        line-height: 2.5
+        color: $white
+      li
+        margin-bottom: 15px
+        a
+          font-size: 14px
+          color: $pinkish-grey
+          &:hover
+            text-decoration: underline
+  &__copyright
+    margin-top: 60px
+    p
+      font-size: 12px
+      color: $slate-grey
+  &__policy
+    margin-top: 60px
+    a, span
+      font-size: 12px
+      color: $slate-grey
+      +tr
+    span
+      margin: 0 5px
+    a:hover
+      text-decoration: underline

@@ -1,23 +1,69 @@
 //BEGIN header
-header.header
+header.header(class=header)
   .container
     .row
       .col-xs-4
         .header__logo
-          img(src="img/logo.png", alt="")
+          img(src="img/logo.png" srcset="img/logo@2x.png 2x, img/logo@3x.png 3x")
       .col-xs-8
         .header__nav
           nav
             ul
-              li
-                a(href="#").arrow-dropdown Platform
-              li
-                a(href="#").arrow-dropdown Features
-              li
-                a(href="#").arrow-dropdown Customers
-              li
-                a(href="#") Resources
-              li
+              li Platform
+                i.icon.icon-arrow-down
+                ul.header__nav__dropdown
+                  li
+                    a(href="#")
+                      b Digital Kit
+                      p A completely new kind of mobile digital customer experience for your consumers
+                  li
+                    a(href="#")
+                      b Digital Experience Cloud 
+                        span (Powering Digital Kits)
+                      p Suite of tools to build digital kits and add value to all post purchase interaction touch points
+              li Features
+                i.icon.icon-arrow-down
+                ul.header__nav__dropdown
+                  li
+                    a(href="#")
+                      img(src="img/.png", alt="")
+                      b Blog
+                      p Collection of articles on CX best practies, use cases, industry trends, product updates
+                  li
+                    a(href="#")
+                      b Help Center
+                      p Knowledgebase on using our platform, app, integrations, step by step guides and troubleshooting information
+                  li
+                    a(href="#")
+                      b Security
+                      p Notes on our applications and data security, compliances, hosting, firewalls
+              li Customers
+                i.icon.icon-arrow-down
+                ul.header__nav__dropdown
+                  li
+                    a(href="#")
+                      b Case Studies
+                      p Summary of our customers and the various ways in which they our platform and app to improve their customer engagement and boost their business
+                  li
+                    a(href="#")
+                      b Customer Success
+                      p A step by step guide on how we engage with you to help you reach your goals the moment you buy from us
+              li Resources
+                i.icon.icon-arrow-down
+                ul.header__nav__dropdown
+                  li
+                    a(href="#")
+                      b Blog
+                      p Collection of articles on CX best practies, use cases, industry trends, product updates
+                  li
+                    a(href="#")
+                      b Help Center
+                      p Knowledgebase on using our platform, app, integrations, step by step guides and troubleshooting information
+                  li
+                    a(href="#")
+                      b Security
+                      p Notes on our applications and data security, compliances, hosting, firewalls
+              li 
                 a(href="#") Pricing
           .header__btn
             a(href="#").btn.btn-primary Schedule a demo  
