@@ -10,7 +10,9 @@
 }
 
 $icon-arrow-down: "\EA01";
-$icon-check: "\EA02";
+$icon-arrow-right-2: "\EA02";
+$icon-arrow-right: "\EA03";
+$icon-check: "\EA04";
 
 
 %icon {
@@ -30,4 +32,6 @@ $icon-check: "\EA02";
 }
 
 .icon-arrow-down:before { content: $icon-arrow-down; }
+.icon-arrow-right-2:before { content: $icon-arrow-right-2; }
+.icon-arrow-right:before { content: $icon-arrow-right; }
 .icon-check:before { content: $icon-check; }
