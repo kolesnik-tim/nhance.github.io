@@ -21,12 +21,15 @@
       padding-right: 100px
       margin-bottom: 40px
   &__transform
+    overflow: hidden
     &__content
       height: 590px
       background-image: url('../img/product/curve-bg.png')
-      background-size: 1500px 400px
+      background-size: 1940px 400px
       background-repeat: no-repeat
       background-position: 50% 100%
+      +r(1560)
+        background-size: 1560px 400px
     &__row
       display: flex
       justify-content: space-between
@@ -49,16 +52,24 @@
       position: relative
       &--1
         top: 100px
-        left: 1px
+        left: -18px
+        +rmin(1560)
+          left: -145px
       &--2
-        left: -5px
+        left: -11px
         top: 10px
+        +rmin(1560)
+          left: -56px
       &--3
-        left: -22px
+        left: -16px
         top: 50px
+        +rmin(1560)
+          left: 20px
       &--4
         top: 130px
-        left: -44px
+        left: -26px
+        +rmin(1560)
+          left: 90px
       &__info
         width: 250px
         height: 195px
