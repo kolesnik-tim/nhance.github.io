@@ -1,6 +1,8 @@
 .footer
   background-color: $dark-three
   padding: 105px 0
+  +r(767)
+    padding: 50px 0
   &__logo
     +center-y
     padding: 25px 0
@@ -37,7 +39,15 @@
   &__nav
     display: flex
     justify-content: space-between
+    +r(767)
+      flex-wrap: wrap
     &__block
+      +r(767)
+        width: 50%
+        margin-bottom: 40px
+      +r(450)
+        width: 100%
+        +center-column
       &-last
         width: 215px
         +r(1300)
@@ -48,8 +58,12 @@
         font-weight: 600
         line-height: 2.5
         color: $white
+        +r(767)
+          margin-bottom: 20px
       li
         margin-bottom: 15px
+        +r(450)
+          text-align: center
         a
           font-size: 14px
           color: $pinkish-grey
@@ -60,8 +74,11 @@
     p
       font-size: 12px
       color: $slate-grey
+      line-height: 1.4
   &__policy
     margin-top: 60px
+    +r(767)
+      margin-top: 20px
     a, span
       font-size: 12px
       color: $slate-grey

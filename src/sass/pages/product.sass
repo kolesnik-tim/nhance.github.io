@@ -14,6 +14,9 @@
       line-height: 1.25
       color: $white
       margin-bottom: 35px
+      span
+        font-size: 25px
+        display: block
     p
       font-size: 14px
       line-height: 1.61
@@ -151,21 +154,7 @@
           line-height: 2.08
           color: $brownish-grey-two
   &__capability
-    &__title
-      padding-top: 105px
-      margin-bottom: 120px
-      h2
-        font-size: 40px
-        font-weight: 300
-        line-height: 1.25
-        text-align: center
-        color: $dark-two
-        margin-bottom: 20px
-      p
-        font-size: 16px
-        font-weight: 300
-        text-align: center
-        color: $dark-two
+    padding: 150px 0 0
     &__block
       margin-bottom: 100px
       strong 
@@ -220,7 +209,6 @@
               transform: translate(-50%)
         &--white
           width: 100%
-          max-width: 500px
           height: 450px
           +center
           border-radius: 10px
@@ -230,24 +218,23 @@
     background-image: url('../img/product/dark-bg.png')
     background-position: 50% 50%
     background-size: cover
-    padding: 120px 0 145px
+    padding: 95px 0
     &__block
       display: flex
       border-radius: 10px
       box-shadow: 0px 1.5px 20px 0 rgba(0, 0, 0, 0.06)
       padding: 35px 40px 50px
-      &--red
-        width: calc(100% - 25px)
-        background-color: $coral
-        .btn
-          border-radius: 20px
-          border: solid 1px $white
-          background: $coral
-          +center
-          display: inline-flex
-          i
-            margin-left: 20px
-            font-weight: 300
+      width: 100%
+      background-color: $coral
+      .btn
+        border-radius: 20px
+        border: solid 1px $white
+        background: $coral
+        +center
+        display: inline-flex
+        i
+          margin-left: 20px
+          font-weight: 300
       &__img
         margin-right: 30px
       &__text
@@ -263,7 +250,8 @@
           color: $white
           margin: 20px 0 40px
         ul
-          margin-bottom: 45px
+          margin-bottom: 40px
+          display: flex
         li
           font-size: 14px
           font-weight: 600
@@ -271,24 +259,9 @@
           margin-bottom: 20px
           display: block
           position: relative
-          padding-left: 40px
+          padding-left: 30px
+          padding-right: 30px
           img
             position: absolute
             left: 0
             top: -3px
-      &--white
-        background-color: $white-five
-        width: calc(100% - 25px)
-        margin-left: 25px
-        h2, p, li
-          color: $dark-two
-        .btn
-          border-radius: 20px
-          border: solid 1px $dark-two
-          background: $white
-          +center
-          display: inline-flex
-          color: $dark-two
-          i
-            margin-left: 20px
-            font-weight: 300
