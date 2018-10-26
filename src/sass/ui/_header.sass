@@ -89,6 +89,9 @@
       +tr
       opacity: 0
       visibility: hidden
+      &--icon
+        width: 445px
+        right: -308px
       &:after
         content: ''
         width: 100%
@@ -102,6 +105,13 @@
         position: absolute
         top: -16px
         left: 30%
+      &__img
+        width: 55px
+        img
+          height: 21px
+          margin-right: 30px
+      &__list
+        flex: 1 0
       li
         cursor: pointer
         &:first-child
@@ -115,7 +125,7 @@
             border-bottom: none
       a
         padding: 23px 35px
-        display: block
+        display: flex
         border-bottom: 1px solid rgba($pinkish-grey, 0.5)
         &:hover
           background-color: $white-three
@@ -132,6 +142,9 @@
           line-height: 1.46
           color: $brownish-grey-two
           display: block
+          span
+            color: $brownish-grey-two
+            display: block
   &__btn
     margin-left: 50px
     display: flex
