@@ -30,9 +30,16 @@
       background-position: 50% 100%
       +r(1560)
         background-size: 1560px 400px
+      +r(1310)
+        background-size: 1310px 350px
     &__row
       display: flex
       justify-content: space-between
+      +r(1310)
+        width: 1250px
+        position: relative
+        left: 50%
+        transform: translate(-50%)
     &__title
       padding: 95px 0 115px
       h2
@@ -52,24 +59,36 @@
       position: relative
       &--1
         top: 100px
-        left: -18px
+        left: -19px
         +rmin(1560)
           left: -145px
+        +r(1310)
+          left: 64px
+          top: 130px
       &--2
-        left: -11px
+        left: -12px
         top: 10px
         +rmin(1560)
           left: -56px
+        +r(1310)
+          left: 16px
+          top: 40px
       &--3
         left: -16px
         top: 50px
         +rmin(1560)
           left: 20px
+        +r(1310)
+          left: -40px
+          top: 70px
       &--4
         top: 130px
         left: -26px
         +rmin(1560)
           left: 90px
+        +r(1310)
+          left: -101px
+          top: 150px
       &__info
         width: 250px
         height: 195px
