@@ -3,6 +3,11 @@
     height: 705px
     background: $dark
     +center
+    &__img
+      display: flex
+      justify-content: flex-end
+      img
+        max-width: 100%
     h1
       font-size: 40px
       font-weight: 300
@@ -14,6 +19,7 @@
       line-height: 1.61
       color: $white-60
       padding-right: 100px
+      margin-bottom: 40px
   &__experience
     padding: 100px 0
     background: rgb(242, 242, 242)
@@ -100,7 +106,7 @@
       &__img
         margin: 0 90px
   &__advantages
-    padding: 130px 0
+    padding: 125px 0
     background: rgb(242, 242, 242)
     &__title
       margin-bottom: 120px
@@ -155,6 +161,7 @@
           top: -20px
           right: 25px
           position: absolute
+          z-index: 10
         strong
           font-size: 18px
           font-weight: 600
@@ -166,4 +173,21 @@
           font-size: 14px
           line-height: 1.43
           color: $brownish-grey-two
-          max-width: 225px
+          max-width: 230px
+  &__relations
+    height: 400px
+    +center
+    background: rgb(242, 242, 242)
+    h2
+      font-size: 40px
+      font-weight: 300
+      text-align: center
+      color: $dark-two
+      margin-bottom: 20px
+    p
+      font-size: 14px
+      font-weight: 300
+      line-height: 1.43
+      text-align: center
+      color: $dark-two
+      margin-bottom: 45px
