@@ -4,16 +4,26 @@
     height: 705px
     background: $dark
     +center
+    +r(767)
+      height: 900px
+    +r(600)
+      height: 700px
     &__img
       img
         max-width: 100%
         margin-left: -40px
+        +r(767)
+          margin: 0
+          width: 100%
     h1
       font-size: 40px
       font-weight: 300
       line-height: 1.25
       color: $white
       margin-bottom: 35px
+      +r(767)
+        margin-top: 100px
+        font-size: 30px
       span
         font-size: 25px
         display: block
@@ -51,6 +61,8 @@
         line-height: 1.5
         text-align: center
         color: $dark
+        +r(767)
+          font-size: 30px
       p
         font-size: 16px
         font-weight: 300
@@ -169,6 +181,8 @@
         line-height: 1.13
         color: $dark-two
         margin-bottom: 50px
+        +r(767)
+          font-size: 30px
       p
         font-size: 14px
         font-weight: 300
@@ -226,6 +240,8 @@
       padding: 35px 40px 50px
       width: 100%
       background-color: $coral
+      +r(767)
+        padding: 20px 10px
       .btn
         border-radius: 20px
         border: solid 1px $white
@@ -237,6 +253,8 @@
           font-weight: 300
       &__img
         margin-right: 30px
+        +r(767)
+          margin-right: 10px
       &__text
         h2 
           font-size: 40px
@@ -252,6 +270,8 @@
         ul
           margin-bottom: 40px
           display: flex
+          +r(767)
+            flex-direction: column
         li
           font-size: 14px
           font-weight: 600

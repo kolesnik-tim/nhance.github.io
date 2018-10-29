@@ -3,9 +3,13 @@
     height: 705px
     background: $dark
     +center
+    +r(767)
+      height: 930px
     &__img
       display: flex
       justify-content: flex-end
+      +r(767)
+        justify-content: center
       img
         max-width: 100%
     h1
@@ -14,12 +18,17 @@
       line-height: 1.25
       color: $white
       margin-bottom: 35px
+      +r(767)
+        font-size: 30px
+        margin-top: 100px
     p
       font-size: 14px
       line-height: 1.61
       color: $white-60
       padding-right: 100px
       margin-bottom: 40px
+      +r(767)
+        padding-right: 0
   &__experience
     padding: 100px 0
     background: rgb(242, 242, 242)
@@ -30,6 +39,8 @@
       text-align: center
       color: $dark-two
       margin-bottom: 20px
+      +r(767)
+        font-size: 28px
     p
       font-size: 16px
       font-weight: 300
@@ -44,6 +55,11 @@
       box-shadow: 0px 1.5px 20px 0 rgba(0, 0, 0, 0.06)
       background-color: $white
       margin-bottom: 50px
+      +r(767)
+        flex-direction: column
+        box-shadow: none
+        background: none
+        overflow: visible
     &__block
       width: 100%
       box-shadow: 0px 1.5px 20px 0 rgba(0, 0, 0, 0.06)
@@ -52,6 +68,9 @@
       justify-content: flex-start
       padding: 25px
       padding-bottom: 55px
+      +r(767)
+        margin-bottom: 20px
+        border-radius: 10px
       &__img
         overflow: hidden
         border-radius: 10px
@@ -85,6 +104,8 @@
         text-align: center
         color: $dark-two
         margin-bottom: 20px
+        +r(767)
+          font-size: 30px
       p
         font-size: 16px
         font-weight: 300
@@ -92,6 +113,8 @@
         color: $dark-two
     &__block
       margin-bottom: 20px
+      +r(767)
+        margin-bottom: 100px
       h3 
         font-size: 30px
         font-weight: 300
@@ -105,9 +128,13 @@
         margin-bottom: 30px
       &__img
         margin: 0 90px
+        +r(767)
+          margin: 0
   &__advantages
     padding: 125px 0
     background: rgb(242, 242, 242)
+    +r(767)
+      padding: 50px 0
     &__title
       margin-bottom: 120px
       h2
@@ -117,6 +144,8 @@
         text-align: center
         color: $dark-two
         margin-bottom: 20px
+        +r(767)
+          font-size: 30px
       p
         font-size: 16px
         font-weight: 300
@@ -125,11 +154,23 @@
     &__block
       +center
       position: relative
+      padding: 0 30px
       padding-bottom: 40px
       height: 150px
       margin-bottom: 40px
-      &--border
-        &:before
+      +r(767)
+        display: block
+        height: auto
+      &:after
+        content: ''
+        width: 1px
+        height: 110px
+        background: $pinkish-grey
+        top: 0px
+        right: 0px
+        position: absolute
+        z-index: 10
+        +r(767)
           display: none
       &:before
         content: ''
@@ -138,7 +179,28 @@
         background: $pinkish-grey
         position: absolute
         bottom: 0
-        left: 0
+        left: 6%
+        +r(767)
+          display: none
+      &--border
+        &:before
+          display: none
+      &--right
+        &-1
+          &:after
+            +r(1024)
+              display: none !important
+        &:after
+          display: none
+          +r(1024)
+            display: block
+      &--mobile
+        &:after
+          +r(1024)
+            display: none
+        &:before
+          +r(1024)
+            display: block
       &__img
         width: 100px
         height: 100px
@@ -147,33 +209,34 @@
         +center
         border-radius: 100%
         margin-right: 30px
+        +r(1250)
+          width: 80px
+          height: 80px
+        +r(767)
+          position: relative
+          left: 50%
+          transform: translate(-50%)
+          margin-bottom: 10px
       &__text
         flex: 1
         position: relative
-        &--border
-          &:before
-            display: none
-        &:before
-          content: ''
-          width: 1px
-          height: 130px
-          background: $pinkish-grey
-          top: -20px
-          right: 25px
-          position: absolute
-          z-index: 10
+        padding-right: 5px
         strong
           font-size: 18px
           font-weight: 600
-          line-height: 1.94
           color: $dark-three
           margin-bottom: 15px
           display: block
+          +r(767)
+            text-align: center
         p
           font-size: 14px
           line-height: 1.43
           color: $brownish-grey-two
           max-width: 230px
+          +r(767)
+            text-align: center
+            max-width: 100%
   &__relations
     height: 400px
     +center
@@ -184,6 +247,8 @@
       text-align: center
       color: $dark-two
       margin-bottom: 20px
+      +r(767)
+        font-size: 30px
     p
       font-size: 14px
       font-weight: 300

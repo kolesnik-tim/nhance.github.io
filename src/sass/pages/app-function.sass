@@ -159,30 +159,85 @@
 
 
   &.expansion
-    .app-function__intro img
-      right: 18%
+    .app-function__intro
+      +r(900)
+        height: 740px
+      +r(600)
+        height: 650px
+      img
+        right: 18%
+        +r(1150)
+          right: 0
+          transform: none
+        +r(1000)
+          width: 52%
+        +r(600)
+          width: 320px
   &.retention
     .app-function__intro__block
       width: 715px
       margin-bottom: 50px
     .app-function__intro img
       right: 18%
+      +r(1024)
+        right: 15%
+        transform: none
+      +r(900)
+        right: 0
+    .app-function__intro__block h1
+      +r(767)
+        max-width: 350px
+  &.support
+    .app-function__intro
+      img
+        +r(1250)
+          right: 10%
+          transform: none
+        +r(950)
+          right: 0
+          width: 37%
   &.advocacy
+    .app-function__intro
+      +r(767)
+        height: 500px
     .app-function__intro img
       right: 18%
       bottom: 25px
+      +r(1250)
+        transform: none
+        right: 0
+        bottom: 0
+        width: 40%
+      +r(767)
+        display: none
     .app-function__intro__block
       padding: 60px 75px
       padding-right: 165px
       margin-bottom: 40px
+      +r(767)
+        padding: 10px 20px
+        width: 100%
+        max-width: 100%
     .app-function__examples__block__img
       border-radius: 10px
       box-shadow: 0px 1.5px 40px 0 rgba(0, 0, 0, 0.06)
       background-color: $white
       height: 500px
       +center
+      padding: 10px
+      +r(1024)
+        height: 400px
+      +r(500)
+        height: 350px
       &--top
         align-items: flex-start
+        padding: 0
+        +r(767)
+          height: 500px
+          img
+            width: 100%
+        +r(380)
+          height: 280px
       img
         width: auto
         max-width: 100%
