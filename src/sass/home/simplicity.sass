@@ -1,0 +1,76 @@
+.simplicity
+  padding: 100px 0
+  background-color: $dark
+  &__title
+    h2
+      font-size: 40px
+      font-weight: 300
+      line-height: 1.5
+      text-align: center
+      color: $white-three
+      margin-bottom: 40px
+    p 
+      font-size: 16px
+      font-weight: 300
+      line-height: 1.72
+      text-align: center
+      color: $white
+      margin-bottom: 100px
+  &__block
+    +center-column
+    position: relative
+    &--last
+      .simplicity__block__img
+        border: none
+        &:before, &:after
+          display: none 
+    h2
+      font-size: 12px
+      line-height: 1.25
+      text-align: center
+      color: $white-80
+      position: relative
+      display: inline-block
+      max-width: 160px
+      margin-bottom: 50px
+      &:before
+        content: ''
+        position: absolute
+        bottom: -15px
+        width: 40%
+        height: 4px
+        border-radius: 1.7px
+        background-color: $pink-red
+        left: 50%
+        transform: translate(-50%)
+    &__img
+      height: 320px
+      +center
+      position: relative
+      width: 100%
+      border-right: 1px solid rgba($white, 0.3)
+      padding-top: 20px
+      &:before, &:after
+        content: ''
+        position: absolute
+        right: -100px
+        border: 60px solid transparent
+        border-left: 40px solid rgba($white, 0.3)
+      &:after
+        border-left: 40px solid $dark
+        right: -99px
+      p
+        +center-column
+        font-size: 12px
+        font-weight: bold
+        color: $blue-grey
+        text-transform: uppercase
+        width: 110px
+        text-align: center
+        border-right: 1px solid rgba($white, 0.3)
+        margin-right: 30px
+        &:last-child
+          border: none
+          margin: 0
+        img
+          margin-bottom: 20px
