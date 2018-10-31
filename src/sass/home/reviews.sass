@@ -1,0 +1,61 @@
+.reviews
+  background: rgb(242, 242, 242)
+  padding: 135px 0
+  &__title
+    h2
+      font-size: 40px
+      font-weight: 300
+      color: $dark-three
+      text-align: center
+      margin-bottom: 30px
+    p
+      font-size: 16px
+      font-weight: 300
+      line-height: 1.72
+      text-align: center
+      color: $dark-two
+      margin-bottom: 120px
+  &__slide
+    &__text
+      p
+        font-size: 14px
+        line-height: 1.79
+        text-align: center
+        color: $brownish-grey-two
+        margin-top: 35px
+        margin-bottom: 55px
+    &__img
+      width: 80px
+      height: 80px
+      opacity: 0.5
+      box-shadow: 0px 1.5px 20px 0 rgba(0, 0, 0, 0.06)
+      background-color: $white
+      +center
+      border-radius: 100%
+      transform: scale(0.8)
+    &__name
+      width: 145px
+      position: relative
+      left: 50%
+      transform: translate(-50%)
+      margin-top: 20px
+      opacity: 0
+      +tr
+      b, p
+        font-size: 14px
+        font-weight: 600
+        line-height: 1.43
+        text-align: center
+        color: $dark-two
+      p
+        font-weight: normal
+        color: $warm-grey
+  .gallery-thumbs
+    .swiper-wrapper
+      +center
+      align-items: flex-start
+    .swiper-slide-thumb-active
+      .reviews__slide__img
+        transform: scale(1)
+      .reviews__slide__name
+        opacity: 1

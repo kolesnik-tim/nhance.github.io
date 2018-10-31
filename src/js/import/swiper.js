@@ -1,22 +1,19 @@
-// import Swiper from 'swiper';
+import Swiper from 'swiper';
 
-
-// //home
-// var swiper = new Swiper('.swiper-shares', {
-//   slidesPerView: 2,
-//   spaceBetween: 30,
-//   navigation: {
-//     nextEl: '.swiper-shares-next',
-//     prevEl: '.swiper-shares-prev',
-//   },
-//   pagination: {
-//     el: '.swiper-pagination-shares',
-//     clickable: true,
-//   },
-//   breakpoints: {
-//     1024: {
-//       slidesPerView: 1,
-//       spaceBetween: 30
-//     }
-//   }
-// });
+var galleryThumbs = new Swiper('.gallery-thumbs', {
+  spaceBetween: 0,
+  slidesPerView: 7,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+});
+var galleryTop = new Swiper('.gallery-top', {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  thumbs: {
+    swiper: galleryThumbs
+  }
+});
