@@ -1,0 +1,150 @@
+.pricing
+  padding-top: 160px
+  background-color: $white-four
+  h1
+    font-size: 50px
+    font-weight: 300
+    color: $dark-two
+    text-align: center
+    margin-bottom: 60px
+  .tabs
+    +center-column
+    &__caption
+      display: flex
+      justify-content: center
+      margin-bottom: 60px
+      li
+        cursor: pointer
+        border-radius: 17.5px
+        border: solid 1px transparent
+        padding: 13px 20px
+        font-size: 12px
+        line-height: 1
+        font-weight: bold
+        color: $dark
+        text-transform: uppercase
+        +tr
+        &.active
+          border: solid 1px $dark-two
+    &__content
+      display: none
+      width: 100%
+      &.active
+        display: block
+  &__tariff
+    margin-bottom: 60px
+    &__block
+      border-radius: 10px
+      background-color: $white
+      padding: 60px
+      height: 100%
+      overflow: hidden
+      position: relative
+      &__popular
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        background-color: $dark-two
+        padding: 7px
+        p
+          font-size: 12px
+          font-weight: bold
+          text-align: center
+          color: $white
+      &__title
+        h2
+          font-size: 30px
+          font-weight: 300
+          color: $dark-two
+          margin-bottom: 30px
+          text-align: center
+        p
+          font-size: 14px
+          font-weight: 300
+          line-height: 1.43
+          text-align: center
+          color: $dark
+          margin-bottom: 23px
+      &__coins
+        +center-column
+        p
+          height: 15px
+          display: block
+          font-size: 12px
+          font-weight: normal
+          text-align: center
+          color: $dark
+          text-transform: uppercase
+          margin-bottom: 10px
+        strong
+          font-size: 30px
+          font-weight: 600
+          color: $dark-two
+          span
+            font-size: 14px
+            font-weight: 300
+            position: relative
+            top: -10px
+          b
+            font-size: 14px
+      &__details
+        +center-column
+        padding: 25px 0 50px
+        min-height: 115px
+        a
+          font-size: 12px
+          font-weight: normal
+          color: $dark
+          margin-bottom: 15px
+          text-decoration: underline
+        span
+          display: block
+          font-size: 12px
+          color: rgba(19, 28, 47, 0.6)
+      &__btn
+        a
+          width: 100%
+          +center
+      &__includes
+        padding: 60px 0 20px
+        min-height: 125px
+        h3
+          font-size: 14px
+          font-weight: 600
+          text-align: center
+          color: $dark-two
+        p
+          font-size: 12px
+          text-align: center
+          color: $dark-two
+          margin-top: 20px
+      &__all
+        h3
+          text-align: center
+          margin-bottom: 20px
+          a
+            font-size: 14px
+            font-weight: 600
+            color: $dark-two
+            text-decoration: underline
+        ul
+          +center-column
+        li
+          font-size: 12px
+          text-align: center
+          color: $dark-two
+          margin-bottom: 10px
+    &__info
+      margin-top: 50px
+      p
+        font-size: 12px
+        font-weight: normal
+        font-style: normal
+        font-stretch: normal
+        line-height: 2.08
+        letter-spacing: normal
+        text-align: center
+        color: $dark-two
+        &:first-child
+          font-size: 14px

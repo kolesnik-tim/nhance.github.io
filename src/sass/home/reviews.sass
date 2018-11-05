@@ -1,6 +1,8 @@
 .reviews
   background: rgb(242, 242, 242)
   padding: 135px 0
+  .swiper
+    position: relative
   &__title
     h2
       font-size: 40px
@@ -50,6 +52,14 @@
       p
         font-weight: normal
         color: $warm-grey
+  .swiper-button-next, .swiper-button-prev
+    background: none
+    img
+      width: 40px
+  .swiper-button-next
+    right: -150px
+  .swiper-button-prev
+    left: -150px
   .gallery-thumbs
     .swiper-wrapper
       +center
