@@ -1,5 +1,9 @@
+.blocker
+  z-index: 999 !important
 .pop-up
-  &-close
+  .close-modal 
+    display: none !important
+  &__close
     width: 30px
     height: 30px
     position: absolute
@@ -8,14 +12,50 @@
     span
       &:before, &:after
         content: ''
-        width: 30px
+        width: 15px
         height: 2px
-        background: $black
+        background: $pinkish-grey
         position: absolute
-        top: 13px
+        top: 15px
+        right: 8px
       &:before
-        left: 0
         transform: rotate(45deg)
       &:after
-        right: 0
         transform: rotate(-45deg)
+  &__pay.modal
+    max-width: 665px
+    width: 100%
+    border-radius: 10px
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.19)
+    background-color: $white
+    padding: 0
+    overflow: hidden
+    h2
+      padding: 30px
+      +center-y
+      font-size: 25px
+      font-weight: 300
+      color: $dark-two
+      img
+        margin-right: 15px
+    table
+      th
+        font-size: 12px
+        font-weight: bold
+        text-align: center
+        color: $dark-two
+        text-transform: uppercase
+        padding: 20px 30px
+        width: 33%
+      td
+        font-size: 14px
+        font-weight: normal
+        color: $brownish-grey-two
+        padding: 20px 30px
+        border: 1px solid $pinkish-grey
+        width: 33%
+        b, a
+          color: $dark-two
+          font-weight: 600
+        a
+          color: $pink-red

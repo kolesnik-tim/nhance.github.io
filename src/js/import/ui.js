@@ -1,17 +1,17 @@
 import '../lib/selectize.min.js';
 // import '../lib/maskedinput.js';
-// import modal from 'jquery-modal';
+import modal from 'jquery-modal';
 
 //select
 // $('select').selectize();
 
-// //pop-up
-// $('[rel="modal:open"]').on('click', function(event) {
-//   $(this).modal({
-//     fadeDuration: 200
-//   });
-//   return false;
-// });
+//pop-up
+$('[rel="modal:open"]').on('click', function(event) {
+  $(this).modal({
+    fadeDuration: 200
+  });
+  return false;
+});
 
 //header
 var mywindow = $(window);
@@ -25,7 +25,6 @@ mywindow.scroll(function () {
     if (newscroll > mypos && !up) {
         $('.header').stop().removeClass('scroll');
         up = !up;
-        console.log(up);
     } else if(newscroll < mypos && up) {
         $('.header').stop().addClass('scroll');
         up = !up;
@@ -47,3 +46,15 @@ $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
     .addClass('active').siblings().removeClass('active')
     .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
 });
+
+
+//sledeDown
+$('.pricing__questions__block strong').on('click', function(){
+  if($(this).hasClass('active')){
+    $(this).removeClass('active');
+    $(this).next('.pricing__questions__block__text').slideUp();
+  } else {
+    $(this).addClass('active');
+    $(this).next('.pricing__questions__block__text').slideDown();
+  }
+})

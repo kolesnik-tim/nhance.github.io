@@ -36,7 +36,7 @@
     &__block
       border-radius: 10px
       background-color: $white
-      padding: 60px
+      padding: 60px 55px
       height: 100%
       overflow: hidden
       position: relative
@@ -81,13 +81,25 @@
           font-size: 30px
           font-weight: 600
           color: $dark-two
+          display: flex
+          align-items: flex-end
           span
             font-size: 14px
             font-weight: 300
             position: relative
-            top: -10px
+            top: -14px
           b
             font-size: 14px
+            position: relative
+            top: -2px
+          i
+            font-size: 14px
+            margin-left: 7px
+            color: $dark-two
+            font-weight: normal
+            font-style: normal
+            position: relative
+            top: -2px
       &__details
         +center-column
         padding: 25px 0 50px
@@ -148,3 +160,56 @@
         color: $dark-two
         &:first-child
           font-size: 14px
+  &__questions
+    padding: 60px 0 140px
+    h2
+      font-size: 30px
+      font-weight: 300
+      color: $dark-two
+      text-align: center
+      margin-bottom: 90px
+    &__block
+      border-radius: 10px
+      box-shadow: 0px 1.5px 5px 0 rgba(0, 0, 0, 0.11)
+      border: solid 0 #000000
+      background-color: $white
+      padding: 35px
+      margin-bottom: 20px
+      display: inline-block
+      width: 100%
+      &__text
+        margin-top: 20px
+      strong
+        font-size: 14px
+        font-weight: 600
+        font-style: normal
+        font-stretch: normal
+        line-height: 2.14
+        letter-spacing: 0.1px
+        text-align: left
+        color: $dark-three
+        position: relative
+        display: block
+        &.active
+          i
+            transform: rotate(0deg)
+        i
+          position: absolute
+          right: 0
+          top: 10px
+          transform: rotate(180deg)
+          +tr
+      div, li, b
+        font-size: 12px
+        font-weight: normal
+        line-height: 2.08
+        color: $dark
+        margin-bottom: 40px
+        &:last-child
+          margin-bottom: 0
+      ul
+        margin-bottom: 40px
+      li, b
+        margin-bottom: 0
+      b
+        font-weight: 600
