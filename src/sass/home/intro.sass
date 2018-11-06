@@ -2,6 +2,8 @@
   height: 795px
   background: $dark-two
   +center
+  +r(767)
+    height: 650px
   strong
     font-size: 16px
     font-weight: bold
@@ -9,6 +11,8 @@
     color: $cerise
     text-transform: uppercase
     margin-bottom: 25px
+    +r(767)
+      font-size: 12px
   h2
     font-size: 30px
     font-weight: 300
@@ -16,8 +20,15 @@
     letter-spacing: 1.2px
     color: $white
     margin-bottom: 75px
+    +r(767)
+      font-size: 20px
   &__btn
     display: flex
     justify-content: center
+    +r(450)
+      flex-direction: column
     .btn-primary
       margin-right: 10px
+      +r(450)
+        margin: 0
+        margin-bottom: 20px

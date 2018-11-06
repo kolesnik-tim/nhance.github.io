@@ -1,8 +1,14 @@
 .relations
   padding: 0px 0 200px
   background: rgb(242, 242, 242)
+  +r(1024)
+    padding: 70px 0
+  +r(767)
+    padding-top: 0
   &__title
     padding-bottom: 110px
+    +r(767)
+      padding-bottom: 50px
     h2
       font-size: 40px
       font-weight: 300
@@ -10,6 +16,8 @@
       text-align: center
       color: $dark-two
       margin-bottom: 30px
+      +r(767)
+        font-size: 25px
     p
       font-size: 16px
       font-weight: 300
@@ -20,6 +28,8 @@
       position: relative
       left: 50%
       transform: translate(-50%)
+      +r(767)
+        font-size: 12px
   &__content
     display: flex
     background: $white
@@ -28,6 +38,10 @@
     overflow: hidden
     box-shadow: 0px 1.5px 20px 0 rgba(0, 0, 0, 0.06)
     background-color: $white
+    +r(767)
+      flex-direction: column
+      background: none
+      box-shadow: none
   &__block
     width: 100%
     box-shadow: 0px 1.5px 20px 0 rgba(0, 0, 0, 0.06)
@@ -35,6 +49,11 @@
     +center-column
     justify-content: space-between
     padding: 50px 35px
+    +r(1024)
+      padding: 50px 15px
+    +r(767)
+      margin-bottom: 30px
+      border-radius: 10px
     img
       position: relative
       left: 50%

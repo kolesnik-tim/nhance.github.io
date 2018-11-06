@@ -1,6 +1,8 @@
 .reviews
   background: rgb(242, 242, 242)
   padding: 135px 0
+  +r(767)
+    padding: 60px 0
   .swiper
     position: relative
   &__title
@@ -10,6 +12,8 @@
       color: $dark-three
       text-align: center
       margin-bottom: 30px
+      +r(767)
+        font-size: 30px
     p
       font-size: 16px
       font-weight: 300
@@ -17,6 +21,8 @@
       text-align: center
       color: $dark-two
       margin-bottom: 120px
+      +r(767)
+        font-size: 14px
   &__slide
     &__text
       p
@@ -35,6 +41,11 @@
       +center
       border-radius: 100%
       transform: scale(0.8)
+      +r(550)
+        width: 50px
+        height: 50px
+      img
+        width: 80%
     &__name
       width: 145px
       position: relative
@@ -58,8 +69,18 @@
       width: 40px
   .swiper-button-next
     right: -150px
+    +r(1040)
+      right: -50px
+    +r(767)
+      top: 10%
+      right: 10px
   .swiper-button-prev
     left: -150px
+    +r(1040)
+      left: -50px
+    +r(767)
+      top: 10%
+      left: 0
   .gallery-thumbs
     .swiper-wrapper
       +center
