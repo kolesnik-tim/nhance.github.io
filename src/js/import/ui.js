@@ -58,3 +58,15 @@ $('.pricing__questions__block strong').on('click', function(){
     $(this).next('.pricing__questions__block__text').slideDown();
   }
 })
+
+
+//open mobile menu
+$('.menu-open').on('click', function() {
+  $('.menu').addClass('active');
+  $('.menu-bg').fadeIn();
+});
+//close mobile menu
+$('.menu-bg').on('click', function() {
+  $('.menu').removeClass('active');
+  $(this).fadeOut();
+});
