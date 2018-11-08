@@ -79,3 +79,17 @@ var divs = parent.children();
 while (divs.length) {
     parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
 }
+
+
+//sledeDown
+$('.menu__content .menu__item').on('click', function(){
+  if($(this).hasClass('active')){
+    $(this).siblings('.menu__dropdown').slideUp();
+    $(this).removeClass('active')
+  } else{
+    $('.menu__content .menu__item').removeClass('active')
+    $('.menu__content .menu__item').siblings('.menu__dropdown').slideUp();
+    $(this).siblings('.menu__dropdown').slideDown();
+    $(this).addClass('active')
+  }
+})

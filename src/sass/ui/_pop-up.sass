@@ -107,23 +107,31 @@
       font-size: 16px
       font-weight: normal
       display: block
-    i
-      position: absolute
-      top: 0
-      right: 0
-      width: 38px
-      height: 38px
-      background-color: rgba(238,238,238,.5)
-      +center
-      color: #5e5a54
-      font-size: 13px
-      font-weight: 300
       &.active
-        background-color: #da0e2b
-        color: #fff
+        background: #ddd
+        span
+          background: #da0e2b
+          i
+            color: $white
+            transform: rotate(180deg)
+      span
+        position: absolute
+        top: 0
+        right: 0
+        width: 38px
+        height: 38px
+        background-color: rgba(238,238,238,.5)
+        +center
+        +tr
+      i
+        color: #5e5a54
+        font-size: 13px
+        font-weight: 300
+        +tr
   &__dropdown
     background-color: #eee
     padding-left: 15px
+    display: none
     b
       font-weight: normal
     a
