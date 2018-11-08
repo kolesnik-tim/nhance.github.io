@@ -13,6 +13,7 @@ $icon-arrow-down: "\EA01";
 $icon-arrow-right-2: "\EA02";
 $icon-arrow-right: "\EA03";
 $icon-check: "\EA04";
+$icon-linkedin: "\EA05";
 
 
 %icon {
@@ -35,3 +36,4 @@ $icon-check: "\EA04";
 .icon-arrow-right-2:before { content: $icon-arrow-right-2; }
 .icon-arrow-right:before { content: $icon-arrow-right; }
 .icon-check:before { content: $icon-check; }
+.icon-linkedin:before { content: $icon-linkedin; }

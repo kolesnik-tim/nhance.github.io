@@ -1,0 +1,97 @@
+.team
+  background: $white
+  &__title
+    background-color: $white-four
+    height: 400px
+    +center
+    h1
+      font-size: 40px
+      font-weight: 300
+      color: $dark-two
+      +center-column
+      margin-bottom: 25px
+      strong
+        font-size: 14px
+        font-weight: bold
+        color: $cerise
+        text-transform: uppercase
+    p
+      font-size: 14px
+      font-weight: 300
+      line-height: 1.79
+      text-align: center
+      color: $dark-two
+  &__content
+    padding-bottom: 280px
+    .col-xs-12:nth-child(n+17)
+      display: none
+  &__block
+    background-image: linear-gradient(to top, $white-six, #f9f9f9, $white)
+    +center-column
+    padding: 0 10px
+    padding-bottom: 25px
+    border-radius: 15px
+    margin-top: 50px
+    position: relative
+    height: calc(100% - 50px)
+    +r(767)
+      width: 60%
+      position: relative
+      left: 50%
+      transform: translate(-50%)
+    +r(500)
+      width: 100%
+    &:hover
+      .team__block__hover
+        opacity: 1
+    &__hover
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      border-radius: 15px
+      background-color: $dark-three
+      +center-column
+      padding: 0 50px
+      transition: all 0.5s
+      opacity: 0
+      p
+        font-size: 20px
+        font-weight: 300
+        line-height: 1.5
+        text-align: center
+        color: $white
+        margin-bottom: 35px
+    &__img
+      width: 172px
+      height: 172px
+      overflow: hidden
+      border-radius: 100%
+      background-color: #e3e7f0
+      position: relative
+      margin-bottom: 40px
+      img
+        height: 150px
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translate(-50%)
+    &__info
+      +center-column
+      strong
+        font-size: 14px
+        font-weight: bold
+        line-height: 1.79
+        color: $dark-two
+        text-transform: uppercase
+        text-align: center
+        margin-bottom: 7px
+      p
+        font-size: 12px
+        color: $brownish-grey-two
+        text-align: center
+        min-height: 12px
+      i
+        color: rgb(20, 88, 144)
+        margin-top: 20px

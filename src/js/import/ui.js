@@ -70,3 +70,12 @@ $('.menu-bg').on('click', function() {
   $('.menu').removeClass('active');
   $(this).fadeOut();
 });
+
+
+
+//random
+var parent = $(".team__content .row");
+var divs = parent.children();
+while (divs.length) {
+    parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+}
