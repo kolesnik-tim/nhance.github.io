@@ -1,0 +1,363 @@
+.tour
+  &__intro
+    height: 700px
+    +center
+    background-image: url('../img/tour/tour-banner.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: 50% 50%
+    +r(767)
+      height: 500px
+    h1
+      font-size: 40px
+      font-weight: 300
+      line-height: 1.25
+      text-align: center
+      color: $white-three
+      margin-bottom: 25px
+      +r(767)
+        font-size: 30px
+    p
+      font-size: 14px
+      font-weight: 300
+      line-height: 1.43
+      text-align: center
+      color: $white-three
+  &__app
+    padding: 125px 0
+    +r(767)
+      padding: 50px 0
+    &__block
+      +center-y
+      justify-content: space-between
+      +r(1040)
+        margin-bottom: 60px
+      +r(550)
+        flex-direction: column
+      &--1
+        p, h2
+          text-align: right
+      &--2
+        +r(550)
+          flex-direction: column-reverse
+      &__text
+        max-width: 270px
+        width: 100%
+        +r(1040)
+          max-width: 100%
+        +r(767)
+          margin-bottom: 20px
+        h2 
+          font-size: 30px
+          font-weight: 300
+          line-height: 2
+          color: $dark
+          margin-bottom: 25px
+        p
+          font-size: 14px
+          font-weight: 300
+          line-height: 1.79
+          color: $dark-two
+      &__img
+        display: flex
+        align-items: flex-start
+        width: 260px
+        margin: 0 25px
+        img
+          max-width: 100%
+  &__process
+    background-color: $white-six
+    padding: 110px 0 150px
+    +r(767)
+      padding: 50px 0
+    h2
+      font-size: 40px
+      font-weight: 300
+      line-height: 1.5
+      color: $dark-two
+      margin-bottom: 100px
+      text-align: center
+      +r(767)
+        font-size: 30px
+        margin-bottom: 50px
+    &__content
+      display: flex
+      +r(1200)
+        column-count: 2
+        flex-wrap: wrap
+      +r(767)
+        flex-direction: column
+    &__block
+      margin-right: 25px
+      padding: 40px 27px
+      border-radius: 10px
+      box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.08)
+      background-color: $white
+      flex: 1 1
+      +center-column
+      justify-content: flex-start
+      position: relative
+      +r(1200)
+        width: 31%
+        flex: none
+        margin-bottom: 25px
+      +r(767)
+        width: 60%
+        margin-right: 0
+        position: relative
+        left: 50%
+        transform: translate(-50%)
+      +r(450)
+        width: 100%
+        transform: none
+        left: 0
+      &:last-child
+        margin-right: 0
+      &:nth-child(3n)
+        +r(1200)
+          margin-right: 0
+      span
+        position: absolute
+        right: 0
+        top: 0
+        width: 40px
+        height: 40px
+        background-color: $dark-two
+        +center
+        font-size: 16px
+        font-weight: bold
+        color: $white
+        border-top-right-radius: 10px
+        border-bottom-left-radius: 10px
+      &__img
+        margin-bottom: 26px
+      p
+        font-size: 14px
+        font-weight: 300
+        line-height: 1.61
+        text-align: center
+        color: $dark-two
+        b
+          font-size: 12px
+          font-weight: 300
+          display: block
+          margin-top: 20px
+  &__feature
+    background-color: $white-four
+    padding: 120px 0 190px
+    +r(767)
+      padding: 50px 0
+    h2
+      font-size: 40px
+      font-weight: 300
+      line-height: 1.5
+      color: $dark-two
+      margin-bottom: 80px
+      text-align: center
+      +r(767)
+        font-size: 30px
+        margin-bottom: 40px
+    a.btn
+      color: $black
+      position: relative
+      left: calc(100% - 100px)
+      transform: translate(-100%)
+      +r(1040)
+        left: calc(100% - 20px)
+      +r(767)
+        left: 50%
+        transform: translate(-50%)
+    &__items
+      display: flex
+      flex-direction: column
+      align-items: flex-end
+      text-align: right
+      padding-right: 80px
+      +r(1200)
+        padding-right: 0
+      +r(767)
+        width: 80%
+      +r(500)
+        width: 90%
+      li
+        margin-bottom: 35px
+        max-width: 315px
+        position: relative
+        border-right: 1px solid transparent
+        padding-right: 20px
+        cursor: pointer
+        &:first-child
+          max-width: 360px
+        &:before, &:after
+          content: ''
+          position: absolute
+          right: -20px
+          top: 50%
+          transform: translate(0, -50%)
+          border: 10px solid transparent
+          border-left: 10px solid $warm-grey
+          opacity: 0
+        &:after
+          border-left: 10px solid $white-four
+          right: -19px
+        &.active
+          border-right: 1px solid $warm-grey
+          strong
+            font-weight: bold
+            color: #ea1c5e
+          b
+            color: #141b2d
+          &:before, &:after
+            opacity: 1
+        strong
+          font-size: 14px
+          font-weight: normal
+          color: $warm-grey
+          margin-bottom: 15px
+          display: block
+          text-transform: uppercase
+        b
+          font-size: 14px
+          font-weight: normal
+          line-height: 1.43
+          text-align: right
+          color: $warm-grey
+          display: block
+    &__img
+      display: flex
+      +r(1040)
+        flex-direction: column
+      +r(767)
+        margin-top: 60px
+      &__content
+        +center-column
+        justify-content: flex-start
+        margin: 0 25px
+        h4
+          font-size: 20px
+          font-weight: 300
+          text-align: right
+          color: $brownish-grey-two
+          margin-bottom: 20px
+      &__block
+        position: relative
+        overflow: hidden
+        width: 295px
+        height: 575px
+        padding: 40px 20px
+        padding-bottom: 15px
+        border-radius: 50px
+        +r(1040)
+          margin-bottom: 30px
+        &-primary
+          &:before
+            content: ''
+            position: absolute
+            left: 4px
+            top: 0
+            width: 97%
+            height: 41px
+            background: #141b2d
+            z-index: 1
+        .iphone
+          position: absolute
+          left: 0
+          top: 0
+          width: 100%
+          height: 100%
+          z-index: 2
+        .img-block, .img-block-secondary
+          position: absolute
+          width: calc(100% - 35px)
+          margin: 0 17px
+          height: 100%
+          left: 0
+          top: 100%
+          transition: all 0.8s
+          &.active
+            top: 40px
+        .img-block-secondary
+          top: -100%
+          height: calc(100% - 15px)
+          &.active
+            top: 0
+  &__advantage
+    height: 750px
+    background-image: url('../img/tour/tour-banner-2.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: 50% 50%
+    +center
+    .row
+      width: 100%
+    &__block
+      box-shadow: 0 0 17.5px 0 rgba(0, 0, 0, 0.05)
+      background-color: $white-five
+      padding: 95px 75px
+      width: 100%
+      position: relative
+      right: -0.5rem
+      +r(767)
+        width: calc(100% + 1rem)
+        right: 0.5rem
+        padding: 40px 15px
+      .logo
+        position: absolute
+        left: -30px
+        top: 50%
+        transform: translate(0, -50%)
+        +r(767)
+          top: -30px
+          transform: translate(-50%, 0)
+          left: 50%
+      h2
+        font-size: 30px
+        font-weight: 300
+        color: $dark-two
+        margin-bottom: 30px
+      li
+        font-size: 14px
+        font-weight: 300
+        color: $dark-two
+        display: flex
+        margin-bottom: 20px
+        img
+          width: 17px
+          height: 17px
+          margin-right: 21px
+  &__experience
+    padding: 110px 0 90px
+    background: rgb(255, 255, 255)
+    +r(767)
+      padding: 50px 0
+    h2
+      font-size: 40px
+      font-weight: 300
+      line-height: 1.38
+      text-align: center
+      color: $dark-two
+      margin-bottom: 140px
+      +r(767)
+        font-size: 30px
+        margin-bottom: 80px
+    &__block
+      margin-bottom: 107px
+      padding-left: 50px
+      +r(767)
+        padding-left: 0
+        margin-bottom: 50px
+      span
+        display: block
+        font-size: 40px
+        font-weight: 300
+        color: $pink-red
+      p
+        font-size: 14px
+        font-weight: 300
+        line-height: 1.43
+        color: $dark-two
+        max-width: 207px
+        +r(767)
+          position: relative
+          left: 50%
+          transform: translate(-50%)

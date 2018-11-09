@@ -93,3 +93,11 @@ $('.menu__content .menu__item').on('click', function(){
     $(this).addClass('active')
   }
 })
+
+
+//
+$('.tour__feature__items').on('click', 'li:not(.active)', function() {
+  $(this).addClass('active').siblings().removeClass('active')
+  $(this).closest('.tour__feature').find('.img-block').removeClass('active').eq($(this).index()).addClass('active');
+  $(this).closest('.tour__feature').find('.img-block-secondary').removeClass('active').eq($(this).index()).addClass('active');
+});
