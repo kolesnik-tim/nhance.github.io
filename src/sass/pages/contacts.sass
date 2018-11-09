@@ -1,0 +1,104 @@
+.contacts
+  &__intro
+    height: 400px
+    background-color: $white-four
+    +center
+    h1
+      font-size: 40px
+      font-weight: 300
+      line-height: 1.5
+      text-align: center
+      color: $dark-two
+      margin-bottom: 24px
+      padding-top: 50px
+      +r(767)
+        font-size: 30px
+    p
+      font-size: 16px
+      font-weight: 300
+      line-height: 1.56
+      text-align: center
+      color: $dark-two
+  &__content
+    padding: 120px 0 220px
+    +r(767)
+      padding: 50px 0
+  &__block
+    &__info
+      margin-bottom: 15px
+      flex: 1
+    li
+      display: flex
+      margin-bottom: 25px
+      &:last-child
+        align-items: center
+      strong
+        display: block
+        max-width: 140px
+        width: 100%
+        text-align: right
+        margin-right: 65px
+        font-size: 14px
+        font-weight: 600
+        line-height: 1.43
+        color: $dark-three
+        text-transform: uppercase
+        +r(767)
+          max-width: 100%
+          width: 110px
+          margin-right: 15px
+      b
+        font-size: 14px
+        font-weight: 600
+        line-height: 1.43
+        color: $dark-three
+        margin-bottom: 15px
+        display: block
+        flex: 1
+        &.secondary
+          margin-top: 45px
+      p, a
+        font-size: 14px
+        font-weight: 300
+        line-height: 1.43
+        color: $dark-three
+        max-width: 240px
+        width: 100%
+        flex: 1
+      .btn
+        font-weight: bold
+        max-width: 100%
+        width: 215px
+        flex: none
+        +center
+        padding: 11px 0
+        +r(390)
+          flex: 1
+          font-size: 10px
+  &__form
+    border-left: 1px solid $white-four
+    padding-left: 85px
+    height: 100%
+    +r(1040)
+      border-top: 1px solid $white-four
+      border-left: none
+      padding-left: 0
+      padding-top: 40px 
+      margin-top: 40px
+    &__input
+      input
+        width: 100%
+        font-size: 14px
+        font-weight: normal
+        line-height: 1.43
+        color: $dark-three
+        +placeholder-color($dark-three)
+        padding: 10px 0
+        border-bottom: 1px solid $pinkish-grey
+        margin-bottom: 30px
+    &__btn
+      margin-top: 10px
+      input
+        background: none
+        color: $dark
+        +tr

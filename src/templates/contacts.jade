@@ -1,0 +1,46 @@
+---
+title: Contacts
+header: app-function
+---
+extends layouts/_layout
+block content
+  .contacts
+    .contacts__intro
+      .container
+        .row.center-xs
+          .col-md-7.col-sm-10.col-xs-12
+            h1 We’d love to hear from you
+            p Whether you have a question about features, trials, pricing, need a demo, or anything else, our team is ready to answer all your questions
+    .contacts__content
+      .container
+        .row.start-md.center-xs
+          .col-md-6.col-sm-7.col-xs-12.start-xs
+            ul.contacts__block
+              li
+                strong Address
+                .contacts__block__info
+                  b.primary Bangalore
+                  p #271, 2nd Floor, Sri Ganesh Complex, Hosur Main Road, Madiwala, Landmark: Silk Board Junction, Bangalore - 560068.
+                  b.secondary Dubai
+                  p FS#46, Building 16, Dubai Internet City, TECOM, Dubai, U.A.E.
+              li
+                strong Phone number
+                a(href="tel:+918065586557") +91 80 65586557
+              li
+                strong sales
+                a(href="mailto:sales@nhancenow.com") sales@nhancenow.com
+              li
+                strong support
+                a(href="mailto:sales@nhancenow.com") support@nhancenow.com
+              li
+                strong we’re hiring
+                a(href="#").btn.btn-secondary see our job openings
+          .col-md-6.col-xs-12.start-xs
+            form.contacts__form
+              .contacts__form__input
+                input(type="text" placeholder="Name" name="Name")
+                input(type="tel" placeholder="Contact Number" name="phone")
+                input(type="email" placeholder="Email ID" name="imail")
+                input(type="text" placeholder="Message" name="message")
+              .contacts__form__btn
+                input(type="submit" value="submit").btn.btn-secondary
