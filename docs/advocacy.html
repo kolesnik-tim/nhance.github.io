@@ -113,7 +113,7 @@
       <div class="app-function advocacy">
         <section class="app-function__intro">
           <div class="container">
-            <div class="app-function__intro__content"><img src="img/app-function/advocacy/advocacy-human.png" srcset="img/app-function/advocacy/advocacy-human@2x.png 2x, img/app-function/advocacy/advocacy-human@3x.png 3x">
+            <div data-wow-duration="1s" class="app-function__intro__content wow fadeInUp"><img src="img/app-function/advocacy/advocacy-human.png" srcset="img/app-function/advocacy/advocacy-human@2x.png 2x, img/app-function/advocacy/advocacy-human@3x.png 3x">
               <div class="row center-xs">
                 <div class="col-md-8 col-sm-10 col-xs-12 start-xs">
                   <div class="app-function__intro__block"><strong>ADVOCATE</strong>
@@ -138,21 +138,21 @@
             <div class="container">
               <div class="app-function__examples__block">
                 <div class="row middle-xs">
-                  <div class="col-sm-5 col-xs-12">
+                  <div data-wow-duration="1.5s" class="col-sm-5 col-xs-12 wow fadeInUp">
                     <h3>Promotion and Offers</h3>
                     <p>Work towards transforming customers into long term promoters. Recommendation from a brand ambassador is more likely to influence purchase decisions of other customers. With NHANCENOW you can provide your customers with tools to share offers and promote products</p>
                   </div>
                   <div class="col-sm-6 col-xs-12 col-sm-offset-1">
-                    <div class="app-function__examples__block__img app-function__examples__block__img--top"><img src="img/app-function/advocacy/promotion.png" srcset="img/app-function/advocacy/promotion@2x.png 2x, img/app-function/advocacy/promotion@3x.png 3x"></div>
+                    <div data-wow-duration="1.5s" class="app-function__examples__block__img app-function__examples__block__img--top wow fadeInRight"><img src="img/app-function/advocacy/promotion.png" srcset="img/app-function/advocacy/promotion@2x.png 2x, img/app-function/advocacy/promotion@3x.png 3x"></div>
                   </div>
                 </div>
               </div>
               <div class="app-function__examples__block">
                 <div class="row middle-xs">
                   <div class="col-sm-6 col-xs-12 last-xs">
-                    <div class="app-function__examples__block__img"><img src="img/app-function/advocacy/gamification.png" srcset="img/app-function/advocacy/gamification@2x.png 2x, img/app-function/advocacy/gamification@3x.png 3x"></div>
+                    <div data-wow-duration="1.5s" class="app-function__examples__block__img wow fadeInLeft"><img src="img/app-function/advocacy/gamification.png" srcset="img/app-function/advocacy/gamification@2x.png 2x, img/app-function/advocacy/gamification@3x.png 3x"></div>
                   </div>
-                  <div class="col-sm-5 col-xs-12 col-sm-offset-1 last-sm">
+                  <div data-wow-duration="1.5s" class="col-sm-5 col-xs-12 col-sm-offset-1 last-sm wow fadeInUp">
                     <h3>Gamification and Rewards</h3>
                     <p>Develop brand stickiness with creative gamification programmes. Incentives or rewards help to increase customer retention and also to acquire and engage customers. You can incorporate incentive based gamification for the customers who will promote your brand.</p>
                   </div>
@@ -160,12 +160,12 @@
               </div>
               <div class="app-function__examples__block">
                 <div class="row middle-xs">
-                  <div class="col-sm-5 col-xs-12">
+                  <div data-wow-duration="1.5s" class="col-sm-5 col-xs-12 wow fadeInUp">
                     <h3>Advocate Identification and Nurturing</h3>
                     <p>Identify customers who engage regularly; and leverage them to build your brand. Engage and incentivize with exclusive offers, discounts on future purchases and other attractions. Generate “Advocate score” by analysing engagements and interactions.</p>
                   </div>
                   <div class="col-sm-6 col-xs-12 col-sm-offset-1">
-                    <div class="app-function__examples__block__img"><img src="img/app-function/advocacy/advocate-identification.png" srcset="img/app-function/advocacy/advocate-identification@2x.png 2x, img/app-function/advocacy/advocate-identification@3x.png 3x"></div>
+                    <div data-wow-duration="1.5s" class="app-function__examples__block__img wow fadeInRight"><img src="img/app-function/advocacy/advocate-identification.png" srcset="img/app-function/advocacy/advocate-identification@2x.png 2x, img/app-function/advocacy/advocate-identification@3x.png 3x"></div>
                   </div>
                 </div>
               </div>
@@ -359,6 +359,14 @@
     </div>
     <!--END out-->
     <!--LOAD SCRIPTS-->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script>
+      new WOW().init(
+      {
+        live: true,
+      });
+
+    </script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>

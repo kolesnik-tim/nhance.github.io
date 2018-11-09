@@ -113,7 +113,7 @@
       <div class="app-function expansion">
         <section class="app-function__intro">
           <div class="container">
-            <div class="app-function__intro__content"><img src="img/app-function/expansion/expansion-human.png" srcset="img/app-function/expansion/expansion-human@2x.png 2x, img/app-function/expansion/expansion-human@3x.png 3x">
+            <div data-wow-duration="1s" class="app-function__intro__content wow fadeInUp"><img src="img/app-function/expansion/expansion-human.png" srcset="img/app-function/expansion/expansion-human@2x.png 2x, img/app-function/expansion/expansion-human@3x.png 3x">
               <div class="row center-xs">
                 <div class="col-md-10 col-sm-12 start-xs">
                   <div class="app-function__intro__block"><strong>Transact</strong>
@@ -138,21 +138,21 @@
             <div class="container">
               <div class="app-function__examples__block">
                 <div class="row middle-xs">
-                  <div class="col-sm-5 col-xs-12">
+                  <div data-wow-duration="1.5s" class="col-sm-5 col-xs-12 wow fadeInUp">
                     <h3>Add-On Selling / Upsell</h3>
                     <p>Every product or service comes with opportunities for upselling. With our intelligent mapping system, you can present complementary product add-ons, accessories and provide higher value upgrades of the original product or service. It helps you increase the average revenue per user.</p>
                   </div>
                   <div class="col-sm-6 col-xs-12 col-sm-offset-1">
-                    <div class="app-function__examples__block__img"><img src="img/app-function/expansion/expansion-img-01.png" srcset="img/app-function/expansion/expansion-img-01@2x.png 2x, img/app-function/expansion/expansion-img-01@3x.png 3x"></div>
+                    <div data-wow-duration="1.5s" class="app-function__examples__block__img wow fadeInRight"><img src="img/app-function/expansion/expansion-img-01.png" srcset="img/app-function/expansion/expansion-img-01@2x.png 2x, img/app-function/expansion/expansion-img-01@3x.png 3x"></div>
                   </div>
                 </div>
               </div>
               <div class="app-function__examples__block">
                 <div class="row middle-xs">
                   <div class="col-sm-6 col-xs-12 last-xs">
-                    <div class="app-function__examples__block__img"><img src="img/app-function/expansion/expansion-img-02.png" srcset="img/app-function/expansion/expansion-img-02@2x.png 2x, img/app-function/expansion/expansion-img-02@3x.png 3x"></div>
+                    <div data-wow-duration="1.5s" class="app-function__examples__block__img wow fadeInLeft"><img src="img/app-function/expansion/expansion-img-02.png" srcset="img/app-function/expansion/expansion-img-02@2x.png 2x, img/app-function/expansion/expansion-img-02@3x.png 3x"></div>
                   </div>
-                  <div class="col-sm-5 col-xs-12 col-sm-offset-1 last-sm">
+                  <div data-wow-duration="1.5s" class="col-sm-5 col-xs-12 col-sm-offset-1 last-sm wow fadeInUp">
                     <h3>Buy Back & Exchange</h3>
                     <p>Offering buy back and exchange scheme allows you to continue your relationship with your customers. With deep data analytics, consumer insights and business rules, you can automate the entire process of buy back / exchange schemes. It is an intelligent way of generating additional revenue from existing customers</p>
                   </div>
@@ -160,12 +160,12 @@
               </div>
               <div class="app-function__examples__block">
                 <div class="row middle-xs">
-                  <div class="col-sm-5 col-xs-12">
+                  <div data-wow-duration="1.5s" class="col-sm-5 col-xs-12 wow fadeInUp">
                     <h3>Sell Care Plans</h3>
                     <p>Care plans (like extended warranty, insurance, AMCs) are extremely popular in the consumer products segment. They help protect products from accidental damage and offer peace of mind to customers. Reduce the friction in selling care plans by eliminating long forms and complex process with easy Tap-n-Buy features on the customer’s mobile interface.</p>
                   </div>
                   <div class="col-sm-6 col-xs-12 col-sm-offset-1">
-                    <div class="app-function__examples__block__img"><img src="img/app-function/expansion/expansion-img-03.png" srcset="img/app-function/expansion/expansion-img-03@2x.png 2x, img/app-function/expansion/expansion-img-03@3x.png 3x"></div>
+                    <div data-wow-duration="1.5s" class="app-function__examples__block__img wow fadeInRight"><img src="img/app-function/expansion/expansion-img-03.png" srcset="img/app-function/expansion/expansion-img-03@2x.png 2x, img/app-function/expansion/expansion-img-03@3x.png 3x"></div>
                   </div>
                 </div>
               </div>
@@ -359,6 +359,14 @@
     </div>
     <!--END out-->
     <!--LOAD SCRIPTS-->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script>
+      new WOW().init(
+      {
+        live: true,
+      });
+
+    </script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>

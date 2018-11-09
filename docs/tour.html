@@ -126,17 +126,17 @@
             <div class="row">
               <div class="col-md-6 col-xs-12">
                 <div class="tour__app__block tour__app__block--1">
-                  <div class="tour__app__block__text">
+                  <div data-wow-duration="1.5s" class="tour__app__block__text wow fadeInLeft">
                     <h2>Consumer App</h2>
                     <p>An aggregation mobile interface where customers can engage, interact, transact with you through a single touch point. you can simplify your customer connect & offer highly convenient post purchase journeys.</p>
                   </div>
-                  <div class="tour__app__block__img"><img src="img/tour/consumer-app.png" srcset="img/tour/consumer-app@2x.png 2x, img/tour/consumer-app@3x.png 3x"></div>
+                  <div data-wow-duration="1.5s" class="tour__app__block__img wow fadeInRight"><img src="img/tour/consumer-app.png" srcset="img/tour/consumer-app@2x.png 2x, img/tour/consumer-app@3x.png 3x"></div>
                 </div>
               </div>
               <div class="col-md-6 col-xs-12">
                 <div class="tour__app__block tour__app__block--2">
-                  <div class="tour__app__block__img"><img src="img/tour/screenshot-04.png" srcset="img/tour/screenshot-04@2x.png 2x, img/tour/screenshot-04@3x.png 3x"></div>
-                  <div class="tour__app__block__text">
+                  <div data-wow-duration="1.5s" class="tour__app__block__img wow fadeInLeft"><img src="img/tour/screenshot-04.png" srcset="img/tour/screenshot-04@2x.png 2x, img/tour/screenshot-04@3x.png 3x"></div>
+                  <div data-wow-duration="1.5s" class="tour__app__block__text wow fadeInRight">
                     <h2>Business App</h2>
                     <p>Gives you a set of tools to manage and run your customer experience anytime, anywhere</p>
                   </div>
@@ -149,23 +149,23 @@
           <div class="container">
             <h2>How it works?</h2>
             <div class="tour__process__content">
-              <div class="tour__process__block"><span>01</span>
+              <div data-wow-duration="1s" data-wow-offset="40" class="tour__process__block wow zoomIn"><span>01</span>
                 <div class="tour__process__block__img"><img src="img/tour/icon-01.png" srcset="img/tour/icon-01@2x.png 2x, img/tour/icon-01@3x.png 3x"></div>
                 <p>Download and register the Business application</p>
               </div>
-              <div class="tour__process__block"><span>02</span>
+              <div data-wow-duration="1s" data-wow-offset="80" class="tour__process__block wow zoomIn"><span>02</span>
                 <div class="tour__process__block__img"><img src="img/tour/icon-02.png" srcset="img/tour/icon-02@2x.png 2x, img/tour/icon-02@3x.png 3x"></div>
                 <p>Onboard your products and complete your business profile<b>(Our helpful support executives will be at your assistance whenever required)</b></p>
               </div>
-              <div class="tour__process__block"><span>03</span>
+              <div data-wow-duration="1s" data-wow-offset="120" class="tour__process__block wow zoomIn"><span>03</span>
                 <div class="tour__process__block__img"><img src="img/tour/icon-03.png" srcset="img/tour/icon-03@2x.png 2x, img/tour/icon-03@3x.png 3x"></div>
                 <p>Issue digital kit to your customers<b>(Along with the app download link, if they don’t already have the app)</b></p>
               </div>
-              <div class="tour__process__block"><span>04</span>
+              <div data-wow-duration="1s" data-wow-offset="160" class="tour__process__block wow zoomIn"><span>04</span>
                 <div class="tour__process__block__img"><img src="img/tour/icon-04.png" srcset="img/tour/icon-04@2x.png 2x, img/tour/icon-04@3x.png 3x"></div>
                 <p>Your customers get all product details and can manage all post purchase activities through a simple mobile interface</p>
               </div>
-              <div class="tour__process__block"><span>05</span>
+              <div data-wow-duration="1s" data-wow-offset="200" class="tour__process__block wow zoomIn"><span>05</span>
                 <div class="tour__process__block__img"><img src="img/tour/icon-05.png" srcset="img/tour/icon-05@2x.png 2x, img/tour/icon-05@3x.png 3x"></div>
                 <p>Serve, engage, transact, build deeper relationships with your customers to boost business</p>
               </div>
@@ -204,7 +204,7 @@
         <section class="tour__advantage">
           <div class="row end-xs">
             <div class="col-md-7 col-sm-10 col-xs-12 start-xs">
-              <div class="tour__advantage__block"><img src="img/nhance-logo-pink.png" srcset="img/nhance-logo-pink@2x.png 2x, img/nhance-logo-pink@3x.png 3x" class="logo">
+              <div data-wow-duration="2s" class="tour__advantage__block wow flipInY"><img src="img/nhance-logo-pink.png" srcset="img/nhance-logo-pink@2x.png 2x, img/nhance-logo-pink@3x.png 3x" class="logo">
                 <h2>With NHANCE NOW Enterprise You Can...</h2>
                 <ul>
                   <li><img src="img/icon/tick-mark.svg" alt="">Setup your customer experience backbone in hours</li>
@@ -442,6 +442,14 @@
     </div>
     <!--END out-->
     <!--LOAD SCRIPTS-->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script>
+      new WOW().init(
+      {
+        live: true,
+      });
+
+    </script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>

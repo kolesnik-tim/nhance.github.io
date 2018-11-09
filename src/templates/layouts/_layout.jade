@@ -17,4 +17,9 @@ html
 
     //LOAD SCRIPTS
     block scripts
+      script(type="text/javascript" src="js/wow.min.js")
+      script.
+        new WOW().init({
+          live: true,
+        });
       script(type="text/javascript" src="js/app.js")
