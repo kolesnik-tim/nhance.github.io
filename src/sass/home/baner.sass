@@ -20,7 +20,7 @@
       &:before
         content: ''
         position: absolute
-        bottom: 15px
+        bottom: 30px
         width: 15px
         height: 4.5px
         border-radius: 2px
@@ -35,14 +35,17 @@
       line-height: 1.61
       color: $dark-two
       margin-bottom: 30px
-    a
-      display: flex
-      align-items: center
-      font-size: 14px
-      font-weight: 600
-      line-height: 1.79
-      color: $dark-two
-      &:hover
-        text-decoration: underline
-      img
-        margin-right: 15px
+    &__btn
+      +center-y
+      a
+        display: flex
+        align-items: center
+        font-size: 14px
+        font-weight: 600
+        line-height: 1
+        color: $dark-two
+        margin-right: 30px
+        &:hover
+          text-decoration: underline
+        img
+          margin-right: 15px

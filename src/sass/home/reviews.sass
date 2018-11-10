@@ -41,13 +41,14 @@
       +center
       border-radius: 100%
       transform: scale(0.8)
+      overflow: hidden
       +r(550)
         width: 50px
         height: 50px
       img
         width: 80%
     &__name
-      width: 145px
+      width: 210px
       position: relative
       left: 50%
       transform: translate(-50%)
@@ -81,6 +82,9 @@
     +r(767)
       top: 10%
       left: 0
+  .swiper-slide-thumb-active
+    .reviews__slide__img
+      opacity: 1
   .gallery-thumbs
     .swiper-wrapper
       +center
