@@ -36,23 +36,30 @@
   &__transform
     overflow: hidden
     &__content
-      height: 590px
+      height: 600px
       background-image: url('../img/product/curve-bg.png')
       background-size: 1940px 400px
       background-repeat: no-repeat
       background-position: 50% 100%
-      +r(1560)
+      +r(1580)
         background-size: 1560px 400px
-      +r(1310)
-        background-size: 1310px 350px
+      +r(1330)
+        background-size: 1330px 350px
+      +r(1170)
+        background: none
+        height: auto
     &__row
       display: flex
       justify-content: space-between
-      +r(1310)
+      +r(1330)
         width: 1250px
         position: relative
         left: 50%
         transform: translate(-50%)
+      +r(1170)
+        width: 100%
+        flex-wrap: wrap
+        justify-content: space-around
     &__title
       padding: 95px 0 115px
       h2
@@ -72,45 +79,62 @@
         margin-top: 28px
     &__block
       position: relative
+      +r(1170)
+        position: static
+        margin-bottom: 60px
       &--1
-        top: 100px
-        left: -19px
-        +rmin(1560)
-          left: -145px
-        +r(1310)
-          left: 64px
-          top: 130px
+        top: 120px
+        left: -39px
+        +rmin(1580)
+          left: -170px
+        +r(1330)
+          left: 44px
+          top: 150px
       &--2
         left: -12px
-        top: 10px
-        +rmin(1560)
-          left: -56px
-        +r(1310)
-          left: 16px
-          top: 40px
+        top: 63px
+        +rmin(1580)
+          left: -80px
+        +r(1330)
+          left: 13px
+          top: 103px
       &--3
         left: -16px
-        top: 50px
-        +rmin(1560)
-          left: 20px
-        +r(1310)
-          left: -40px
-          top: 70px
+        top: -20px
+        .product__transform__block__list span:after
+          top: 21px
+        +rmin(1580)
+          left: -30px
+        +r(1330)
+          left: -20px
+          top: 30px
       &--4
         top: 130px
         left: -26px
-        +rmin(1560)
-          left: 90px
-        +r(1310)
-          left: -101px
-          top: 150px
+        .product__transform__block__list span:after
+          top: 24px
+        +rmin(1580)
+          left: 40px
+        +r(1330)
+          left: -55px
+          top: 160px
+      &--5
+        top: 70px
+        right: 10px
+        .product__transform__block__list span:after
+          top: 85px
+        +rmin(1580)
+          left: 109px
+        +r(1330)
+          left: -90px
+          top: 104px
       &__info
-        width: 250px
-        height: 195px
+        width: 225px
+        height: 190px
         border-radius: 10px
         box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.1)
         background-color: $white
-        padding: 20px 40px
+        padding: 20px 25px
         +center-column
         strong
           font-size: 12px
@@ -119,6 +143,7 @@
           text-transform: uppercase
           padding: 15px 0
           display: block
+          text-align: center
         p
           font-size: 12px
           line-height: 1.67
@@ -138,7 +163,7 @@
         position: relative
         span
           width: 1.5px
-          height: 105px
+          height: 115px
           background-color: $dark
           display: block
           position: relative
@@ -154,6 +179,17 @@
             height: 5px
             background: $black
             border-radius: 50px
+          &:after
+            content: ''
+            position: absolute
+            width: 15px
+            height: 15px
+            background-color: $pink-red
+            border: 4px solid $white
+            border-radius: 100%
+            top: 50%
+            transform: translate(0, -50%)
+            left: -7px
         ul
           list-style-type: disc
           padding-left: 12px
