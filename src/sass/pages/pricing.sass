@@ -87,7 +87,7 @@
           height: 15px
           display: block
           font-size: 12px
-          font-weight: normal
+          font-weight: 300
           text-align: center
           color: $dark
           text-transform: uppercase
@@ -121,7 +121,7 @@
         min-height: 115px
         a
           font-size: 12px
-          font-weight: normal
+          font-weight: 300
           color: $dark
           margin-bottom: 15px
           text-decoration: underline
@@ -167,11 +167,8 @@
       margin-top: 50px
       p
         font-size: 12px
-        font-weight: normal
-        font-style: normal
-        font-stretch: normal
+        font-weight: 300
         line-height: 2.08
-        letter-spacing: normal
         text-align: center
         color: $dark-two
         &:first-child
@@ -223,14 +220,17 @@
           top: 5px
           transform: rotate(180deg)
           +tr
-      div, li, b
+      div, li, b, a
         font-size: 12px
-        font-weight: normal
+        font-weight: 300
         line-height: 2.08
         color: $dark
         margin-bottom: 40px
         &:last-child
           margin-bottom: 0
+      a
+        &:hover
+          text-decoration: underline
       ul
         margin-bottom: 40px
       li, b
