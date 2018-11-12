@@ -2,8 +2,29 @@
   height: 795px
   background: $dark-two
   +center
+  position: relative
+  overflow: hidden
+  &:before
+    content: ''
+    position: absolute
+    height: 100%
+    width: 100%
+    left: 0
+    top: 0
+    background: rgba(0, 0, 0, 0.6)
+    z-index: 2
   +r(767)
     height: 650px
+  video
+    position: absolute
+    top: 0
+    left: 50%
+    transform: translate(-50%)
+    height: 100%
+    z-index: 1
+  .container
+    position: relative
+    z-index: 3
   strong
     font-size: 16px
     font-weight: bold
