@@ -34,18 +34,30 @@
       +r(550)
         flex-direction: column
       &__text
-        max-width: 270px
+        max-width: 310px
         width: 100%
+        margin-left: 70px
         +r(1040)
           max-width: 100%
         +r(767)
           margin-bottom: 20px
         h2 
-          font-size: 30px
+          font-size: 40px
           font-weight: 300
-          line-height: 2
+          line-height: 1
           color: $dark
-          margin-bottom: 25px
+          padding-bottom: 30px
+          margin-bottom: 8px
+          position: relative
+          &:before
+            content: ''
+            position: absolute
+            left: 0
+            bottom: 0
+            width: 15px
+            height: 4.5px
+            border-radius: 2px
+            background-color: $dark-two
         p
           font-size: 14px
           font-weight: 300
@@ -226,7 +238,7 @@
         position: relative
         overflow: hidden
         width: 295px
-        height: 575px
+        height: 535px
         padding: 40px 20px
         padding-bottom: 15px
         border-radius: 50px
@@ -253,7 +265,7 @@
           position: absolute
           width: calc(100% - 35px)
           margin: 0 17px
-          height: 100%
+          height: calc(100% - 55px)
           left: 0
           top: 100%
           transition: all 0.8s
