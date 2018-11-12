@@ -1,5 +1,6 @@
 .product
-  background: rgb(242, 242, 242)
+  background-image: url('../img/line_bg.png')
+  background-size: 8px 8px
   &__intro
     height: 705px
     background: $dark
@@ -20,7 +21,7 @@
       font-weight: 300
       line-height: 1.25
       color: $white
-      margin-bottom: 35px
+      margin-bottom: 15px
       +r(767)
         margin-top: 100px
         font-size: 30px
@@ -83,54 +84,54 @@
         position: static
         margin-bottom: 60px
       &--1
-        top: 130px
+        top: 160px
         left: -39px
         +rmin(1580)
           left: -173px
         +r(1330)
           left: 44px
-          top: 160px
+          top: 186px
       &--2
         left: -12px
-        top: 73px
+        top: 95px
         +rmin(1580)
           left: -80px
         +r(1330)
           left: 13px
-          top: 113px
+          top: 140px
       &--3
         left: -16px
-        top: -10px
+        top: 10px
         .product__transform__block__list span:after
           top: 21px
         +rmin(1580)
           left: -30px
         +r(1330)
           left: -20px
-          top: 40px
+          top: 60px
       &--4
-        top: 140px
+        top: 150px
         left: -26px
         .product__transform__block__list span:after
-          top: 24px
+          top: 32px
         +rmin(1580)
           left: 40px
         +r(1330)
           left: -55px
-          top: 170px
+          top: 185px
       &--5
-        top: 80px
+        top: 117px
         right: 10px
         .product__transform__block__list span:after
-          top: 85px
+          top: 65px
         +rmin(1580)
           left: 109px
         +r(1330)
           left: -90px
-          top: 114px
+          top: 154px
       &__info
         width: 225px
-        height: 190px
+        height: 170px
         border-radius: 10px
         box-shadow: 0px 1px 4px 0 rgba(0, 0, 0, 0.1)
         background-color: $white
@@ -163,7 +164,7 @@
         position: relative
         span
           width: 1.5px
-          height: 115px
+          height: 100px
           background-color: $dark
           display: block
           position: relative
@@ -190,6 +191,8 @@
             top: 50%
             transform: translate(0, -50%)
             left: -7px
+            +r(1170)
+              display: none
         ul
           list-style-type: disc
           padding-left: 12px
@@ -321,5 +324,3 @@
             position: absolute
             left: 0
             top: -3px
-  .mobile_tour__relations
-    background: rgb(240, 240, 240)
