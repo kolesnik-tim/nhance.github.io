@@ -216,7 +216,7 @@ if($('.product').length) {
 
 
 //app-function
-if($('.app-function').length) {
+if($('.app-function-scroll').length) {
   //1
   // init controller
   var appfunction = new ScrollMagic.Controller();
