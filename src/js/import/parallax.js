@@ -210,3 +210,91 @@ if($('.product').length) {
   .addTo(product5);
 }
 
+
+
+
+
+
+//app-function
+if($('.app-function').length) {
+  //1
+  // init controller
+  var appfunction = new ScrollMagic.Controller();
+  // build tween
+  var appfunctionBlock1 = ["#app-function-img-1"]; 
+  var tweenAppfunction = TweenMax.staggerFrom(appfunctionBlock1, 0.5, {y: '160'});
+
+  // build scene and set duration to window height
+  new ScrollMagic.Scene({
+    triggerElement: ".app-function__examples__block-1",
+    duration: "200%"
+  })
+  .setTween(tweenAppfunction)
+  // .addIndicators()
+  .addTo(appfunction);
+  
+
+  //2
+  // init controller
+  var appfunction2 = new ScrollMagic.Controller();
+  // build tween
+  var appfunctionBlock2 = ["#app-function-img-2"]; 
+  var tweenAppfunction2 = TweenMax.staggerFrom(appfunctionBlock2, 0.5, {y: '160'});
+
+  // build scene and set duration to window height
+  new ScrollMagic.Scene({
+    triggerElement: ".app-function__examples__block-2",
+    duration: "200%"
+  })
+  .setTween(tweenAppfunction2)
+  // .addIndicators()
+  .addTo(appfunction2);
+
+  //3
+  // init controller
+  var appfunction3 = new ScrollMagic.Controller();
+  // build tween
+  var appfunctionBlock3 = ["#app-function-img-3"]; 
+  var tweenAppfunction3 = TweenMax.staggerFrom(appfunctionBlock3, 0.5, {y: '160'});
+
+  // build scene and set duration to window height
+  new ScrollMagic.Scene({
+    triggerElement: ".app-function__examples__block-3",
+    duration: "200%"
+  })
+  .setTween(tweenAppfunction3)
+  // .addIndicators()
+  .addTo(appfunction3);
+
+  //4
+  // init controller
+  var appfunction4 = new ScrollMagic.Controller();
+  // build tween
+  var appfunctionBlock4 = ["#app-function-img-4"]; 
+  var tweenAppfunction4 = TweenMax.staggerFrom(appfunctionBlock4, 0.5, {y: '160'});
+
+  // build scene and set duration to window height
+  new ScrollMagic.Scene({
+    triggerElement: ".app-function__examples__block-4",
+    duration: "200%"
+  })
+  .setTween(tweenAppfunction4)
+  // .addIndicators()
+  .addTo(appfunction4);
+
+  //5
+  // init controller
+  var appfunction5 = new ScrollMagic.Controller();
+  // build tween
+  var appfunctionBlock5 = ["#app-function-img-5"]; 
+  var tweenAppfunction5 = TweenMax.staggerFrom(appfunctionBlock5, 0.5, {y: '160'});
+
+  // build scene and set duration to window height
+  new ScrollMagic.Scene({
+    triggerElement: ".app-function__examples__block-5",
+    duration: "200%"
+  })
+  .setTween(tweenAppfunction5)
+  // .addIndicators()
+  .addTo(appfunction5);
+}
