@@ -95,8 +95,20 @@ $('.menu__content .menu__item').on('click', function(){
 })
 
 
-//
+//tour
 $('.tour__feature__items').on('click', 'li:not(.active)', function() {
   $(this).addClass('active').siblings().removeClass('active')
   $(this).closest('.tour__feature').find('.img-block').removeClass('active').eq($(this).index()).addClass('active');
+});
+
+//pricing mobile
+$('.pricing__tariff__block__mobile-btn').on('click', function(event){
+  event.preventDefault()
+  if($(this).hasClass('active')){
+    $(this).removeClass('active').find('span').text('View details');
+    $(this).siblings('.pricing__tariff__block__mobile').slideUp();
+  } else{
+    $(this).addClass('active').find('span').text('Hide details');
+    $(this).siblings('.pricing__tariff__block__mobile').slideDown()
+  }
 });

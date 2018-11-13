@@ -52,9 +52,29 @@
       +r(1024)
         padding: 60px 10px
       +r(767)
-        padding: 50px 40px
+        padding: 50px 40px 90px
         margin-bottom: 30px
         height: auto
+      &__mobile
+        +r(767)
+          display: none
+        &-btn
+          width: 100%
+          +center-column
+          font-size: 14px
+          font-weight: 600
+          line-height: 1.43
+          text-align: center
+          color: $cerise
+          padding-bottom: 20px
+          padding-top: 20px
+          position: absolute
+          bottom: 0
+          left: 0
+          width: 100%
+          &.active
+            i
+              transform: rotate(180deg)
       &__popular
         position: absolute
         top: 0
@@ -117,19 +137,27 @@
             top: -2px
       &__details
         +center-column
-        padding: 25px 0 50px
         min-height: 115px
+        +r(767)
+          min-height: auto
         a
           font-size: 12px
           font-weight: 300
           color: $dark
           margin-bottom: 15px
           text-decoration: underline
+          margin-top: 25px
         span
           display: block
           font-size: 12px
           color: rgba(19, 28, 47, 0.6)
+          margin-bottom: 50px
+          display: block
+          +r(767)
+            margin-bottom: 0px
       &__btn
+        +r(767)
+          margin-top: 30px
         a
           width: 100%
           color: $black
