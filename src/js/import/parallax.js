@@ -126,22 +126,87 @@ if($('.mobile_tour').length) {
 
 
 
-//customerSolutions
-if($('.customer-solutions').length) {
+//product
+if($('.product').length) {
+  //1
   // init controller
-  var customerSolutions = new ScrollMagic.Controller();
+  var product = new ScrollMagic.Controller();
   // build tween
-  var customerSolutionsBlock = [".product-triger-block"]; 
-  var tweenCustomerSolutions = TweenMax.staggerFrom(customerSolutionsBlock, 0.01, {y: '110'});
+  var productBlock1 = ["#product-img-1"]; 
+  var tweenProduct = TweenMax.staggerFrom(productBlock1, 0.5, {y: '160'});
 
   // build scene and set duration to window height
   new ScrollMagic.Scene({
-    triggerElement: ".product-triger",
+    triggerElement: ".product__capability__block-1",
     duration: "200%"
   })
-  .setTween(tweenCustomerSolutions)
+  .setTween(tweenProduct)
   // .addIndicators()
-  .addTo(customerSolutions);
-}
+  .addTo(product);
+  
 
+  //2
+  // init controller
+  var product2 = new ScrollMagic.Controller();
+  // build tween
+  var productBlock2 = ["#product-img-2"]; 
+  var tweenProduct2 = TweenMax.staggerFrom(productBlock2, 0.5, {y: '160'});
+
+  // build scene and set duration to window height
+  new ScrollMagic.Scene({
+    triggerElement: ".product__capability__block-2",
+    duration: "200%"
+  })
+  .setTween(tweenProduct2)
+  // .addIndicators()
+  .addTo(product2);
+
+  //3
+  // init controller
+  var product3 = new ScrollMagic.Controller();
+  // build tween
+  var productBlock3 = ["#product-img-3"]; 
+  var tweenProduct3 = TweenMax.staggerFrom(productBlock3, 0.5, {y: '160'});
+
+  // build scene and set duration to window height
+  new ScrollMagic.Scene({
+    triggerElement: ".product__capability__block-3",
+    duration: "200%"
+  })
+  .setTween(tweenProduct3)
+  // .addIndicators()
+  .addTo(product3);
+
+  //4
+  // init controller
+  var product4 = new ScrollMagic.Controller();
+  // build tween
+  var productBlock4 = ["#product-img-4"]; 
+  var tweenProduct4 = TweenMax.staggerFrom(productBlock4, 0.5, {y: '160'});
+
+  // build scene and set duration to window height
+  new ScrollMagic.Scene({
+    triggerElement: ".product__capability__block-4",
+    duration: "200%"
+  })
+  .setTween(tweenProduct4)
+  // .addIndicators()
+  .addTo(product4);
+
+  //5
+  // init controller
+  var product5 = new ScrollMagic.Controller();
+  // build tween
+  var productBlock5 = ["#product-img-5"]; 
+  var tweenProduct5 = TweenMax.staggerFrom(productBlock5, 0.5, {y: '160'});
+
+  // build scene and set duration to window height
+  new ScrollMagic.Scene({
+    triggerElement: ".product__capability__block-5",
+    duration: "200%"
+  })
+  .setTween(tweenProduct5)
+  // .addIndicators()
+  .addTo(product5);
+}
 
