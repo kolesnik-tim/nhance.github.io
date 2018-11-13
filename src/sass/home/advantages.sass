@@ -1,8 +1,27 @@
 .advantages
   background: rgb(242, 242, 242)
-  padding: 150px 0 170px
+  padding: 135px 0 170px
   +r(767)
     padding: 50px 0
+  &__title
+    padding-bottom: 110px
+    +r(767)
+      padding-bottom: 50px
+    h2
+      font-size: 40px
+      font-weight: 300
+      line-height: 1.5
+      text-align: center
+      color: $dark-two
+      margin-bottom: 30px
+      +r(767)
+        font-size: 30px
+    p
+      font-size: 16px
+      font-weight: 300
+      line-height: 1.72
+      text-align: center
+      color: $dark-two
   &__block
     border-radius: 10px
     padding: 60px 40px
@@ -70,9 +89,14 @@
           color: #e52360
       li
         border: 1px solid #fbd0df
+    h3
+      +r(767)
+        font-size: 22px
     &__content
       display: flex
       align-items: center
+      +r(550)
+        flex-direction: column
     img
       +r(1200)
         width: 45%
@@ -82,6 +106,10 @@
       padding-left: 15px
       +r(550)
         padding-left: 0
+      ul
+        display: inline-flex
+        flex-direction: column
+        align-items: flex-start
       li
         border-radius: 7.5px
         display: inline-block
