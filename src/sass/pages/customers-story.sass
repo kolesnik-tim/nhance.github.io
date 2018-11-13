@@ -1,17 +1,154 @@
 .customers-story
   &__intro
-    height: 400px
+    height: 500px
+    padding-top: 70px
     background-color: $white-four
     +center
+    +r(767)
+      height: 450px
+      padding-top: 70px
     h1
       font-size: 40px
       font-weight: 300
       line-height: 1.5
       text-align: center
       color: $dark-two
+      margin-bottom: 15px
+      +r(767)
+        font-size: 30px
     img
       height: 74px
       position: relative
       left: 50%
       transform: translate(-50%)
-    
+    &__btn
+      margin-top: 40px
+      +center
+      a
+        color: $dark
+        &:first-child
+          margin-right: 5px
+  &__content
+    padding: 90px 0 200px
+    +r(767)
+      padding: 50px 0
+  .aside
+    border-radius: 10px
+    box-shadow: 0px 4px 2.5px 0 rgba(0, 0, 0, 0.06)
+    background-color: $white
+    overflow: hidden
+    border: 1px solid $white-six
+    +r(767)
+      margin-bottom: 50px
+    h3
+      font-size: 12px
+      font-weight: bold
+      color: $white
+      line-height: 1
+      padding: 20px 30px
+      background-color: $dark-two
+      text-transform: uppercase
+    &__block
+      padding: 30px 27px
+      border-bottom: 1px solid $white-six
+      strong
+        font-size: 14px
+        font-weight: 600
+        color: $dark-three
+        display: block
+        margin-bottom: 20px
+      p
+        font-size: 14px
+        font-weight: 300
+        line-height: 1.79
+        color: $dark-three
+      &-modules
+        padding: 30px 27px 15px
+        li
+          display: flex
+          align-items: center
+          font-size: 14px
+          font-weight: normal
+          color: $dark-three
+          margin-bottom: 15px
+        &__img
+          width: 40px
+          img
+            height: 19px
+  &__text
+    padding-left: 80px
+    +r(1040)
+      padding-left: 20px
+    +r(767)
+      padding-left: 0
+    h3
+      font-size: 30px
+      font-weight: 300
+      line-height: 1.5
+      color: $warm-grey
+      margin-bottom: 50px
+      max-width: 700px
+      +r(767)
+        font-size: 24px
+      span
+        color: $cerise
+    h2
+      font-size: 30px
+      font-weight: 300
+      line-height: 1.33
+      color: $dark-three
+      margin-bottom: 30px
+      margin-top: 20px
+      +r(767)
+        font-size: 24px
+    strong
+      font-weight: 600
+      font-size: 14px
+      color: $dark-three
+    p, li
+      font-size: 14px
+      font-weight: 300
+      line-height: 2.14
+      color: $dark-three
+      margin-bottom: 40px
+    li
+      margin-bottom: 10px
+    ul
+      list-style: disc
+      padding-left: 20px
+      margin-bottom: 40px
+  &__quote
+    position: relative
+    padding-left: 220px
+    +r(1040)
+      padding-left: 120px
+    +r(767)
+      padding-left: 50px
+    img
+      position: absolute
+      left: 80px
+      +r(1040)
+        left: 20px
+        width: 70px
+      +r(767)
+        left: 0
+        width: 35px
+    p
+      font-size: 25px
+      font-weight: 300
+      line-height: 1.8
+      color: $dark-three
+      margin-bottom: 40px
+      +r(767)
+        font-size: 18px
+    b
+      font-size: 16px
+      font-weight: 600
+      line-height: 1.88
+      color: $dark-three
+  
+
+  &.souq
+    .customers-story__intro
+      height: 400px
+      padding-top: 50px
