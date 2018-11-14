@@ -153,12 +153,64 @@
     margin-left: 50px
     display: flex
     width: 265px
+    position: relative
     +r(1024)
       width: 210px
       margin-left: 20px
     .btn-primary
       margin-right: 10px
+    .btn-secondary
+      cursor: pointer
+      &:hover .header__btn__login
+        opacity: 1
+        visibility: visible
     .btn
       font-weight: normal
       +r(1024)
         padding: 8px 10px
+    &__login
+      position: absolute
+      right: -10px
+      top: 50px
+      border-radius: 10px
+      box-shadow: 0 0 10px 0 rgba(0,0,0,.2)
+      width: 150px
+      display: flex
+      flex-direction: column
+      background: $white
+      visibility: hidden
+      opacity: 0
+      &:after
+        content: ''
+        width: 100%
+        height: 20px
+        position: absolute
+        top: -18px
+        z-index: 10
+      &:before
+        content: ''
+        border: 8px solid transparent
+        border-bottom: 8px solid $white
+        position: absolute
+        top: -16px
+        left: 54%
+      li
+        border-bottom: 1px solid #dedede
+        overflow: hidden
+        &:last-child
+          border-bottom: none
+          border-bottom-right-radius: 10px
+          border-bottom-left-radius: 10px
+        &:first-child
+          border-top-right-radius: 10px
+          border-top-left-radius: 10px
+      a
+        display: flex !important
+        align-items: center
+        padding: 16px 18px !important
+        color: #000 !important
+        &:hover
+          background: #f5f5f5
+        img
+          width: 16px
+          margin-right: 10px
