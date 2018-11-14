@@ -115,6 +115,21 @@ $('.pricing__tariff__block__mobile-btn').on('click', function(event){
 
 
 
+//ture
+$('.tour__feature__mobile li').on('click', function(event){
+  event.preventDefault()
+  if($(this).hasClass('active')){
+    $(this).removeClass('active');
+    $(this).find('.tour__feature__mobile__dropdown').slideUp();
+  } else{
+    $('.tour__feature__mobile li').removeClass('active').find('.tour__feature__mobile__dropdown').slideUp();
+    $(this).addClass('active');
+    $(this).find('.tour__feature__mobile__dropdown').slideDown();
+  }
+});
+
+
+
 //якорь
 $(".baner-scroll").on("click", function (event) {
   event.preventDefault();
