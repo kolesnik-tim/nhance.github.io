@@ -112,3 +112,13 @@ $('.pricing__tariff__block__mobile-btn').on('click', function(event){
     $(this).siblings('.pricing__tariff__block__mobile').slideDown()
   }
 });
+
+
+
+//якорь
+$(".baner-scroll").on("click", function (event) {
+  event.preventDefault();
+  var id  = $(this).attr('href'),
+    top = $(id).offset().top;
+  $('body,html').animate({scrollTop: top}, 1500);
+});
