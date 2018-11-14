@@ -9,6 +9,7 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
 });
 var galleryTop = new Swiper('.gallery-top', {
   spaceBetween: 10,
+  loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
