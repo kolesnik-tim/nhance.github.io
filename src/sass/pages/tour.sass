@@ -1,4 +1,6 @@
 .tour
+  &__mobile
+    position: relative
   &__intro
     height: 700px
     +center
@@ -155,46 +157,8 @@
     +r(767)
       padding: 50px 0
     &__mobile
-      display: none
-      +r(767)
-        display: block
-      &__dropdown
-        position: absolute
-        top: 160px
-        z-index: 4
+      &__block
         display: none
-        margin-bottom: 80px
-        width: 295px
-        left: 50%
-        transform: translate(-50%)
-        &:before
-          content: ''
-          position: absolute
-          left: 4px
-          top: 0
-          width: 97%
-          height: 41px
-          background: #141b2d
-          z-index: 1
-          border-top-left-radius: 100px
-          border-top-right-radius: 100px
-        img.iphone
-          position: absolute
-          left: 0
-          top: 0
-          width: 100%
-          height: calc(100% + 40px)
-          z-index: 2
-        img.screen
-          position: relative
-          width: calc(100% - 35px)
-          margin: 0 17px
-          height: calc(100% - 55px)
-          left: 0
-          top: 30px
-          height: 470px
-          transition: all 0.8s
-      &__text
         border: 1px solid $warm-grey
         box-shadow: 0px 1.5px 20px 0 rgba(0, 0, 0, 0.06)
         width: 100%
@@ -202,6 +166,8 @@
         border-radius: 2px
         margin-bottom: 30px
         position: relative
+        +r(767)
+          display: block
         i
           position: absolute
           left: 50%
@@ -209,11 +175,12 @@
           bottom: 10px
           width: 8px
           +tr
+          color: #ea1c5e
           color: $warm-grey
         strong
           font-size: 14px
-          font-weight: 300
-          color: $warm-grey
+          font-weight: bold
+          color: #ea1c5e
           margin-bottom: 15px
           text-align: center
           display: block
@@ -223,18 +190,9 @@
           font-weight: 300
           line-height: 1.43
           text-align: center
-          color: $warm-grey
+          color: #141b2d
           display: block
-      li
-        margin-bottom: 35px
-        position: relative
-        cursor: pointer
         &.active
-          strong
-            font-weight: bold
-            color: #ea1c5e
-          b
-            color: #141b2d
           i
             color: #ea1c5e
             transform: rotate(180deg) translate(-50%)
@@ -254,12 +212,23 @@
       align-items: flex-end
       text-align: right
       padding-right: 80px
+      +tr
       +r(1200)
         padding-right: 0
       +r(767)
-        width: 80%
-      +r(500)
-        width: 90%
+        width: 100%
+        text-align: center
+        position: absolute
+        top: 150px
+        z-index: 10
+        box-shadow: 0 0 10px 0 rgba(0,0,0,.2)
+        background: $white
+        border-radius: 10px
+        opacity: 0
+        visibility: hidden
+        &.active
+          opacity: 1
+          visibility: visible
       li
         margin-bottom: 35px
         max-width: 315px
@@ -267,8 +236,19 @@
         border-right: 1px solid transparent
         padding-right: 20px
         cursor: pointer
+        +r(767)
+          border-right: none !important
+          padding-right: 0
+          border-bottom: 1px solid $warm-grey
+          max-width: 100% !important
+          width: 100%
+          margin-bottom: 0px
+          padding: 10px 10px
         &:first-child
           max-width: 360px
+        &:last-child
+          +r(767)
+            border-bottom: none
         &:before, &:after
           content: ''
           position: absolute
@@ -278,6 +258,8 @@
           border: 10px solid transparent
           border-left: 10px solid $warm-grey
           opacity: 0
+          +r(767)
+            display: none
         &:after
           border-left: 10px solid $white-four
           right: -19px
@@ -297,6 +279,8 @@
           margin-bottom: 15px
           display: block
           text-transform: uppercase
+          +r(767)
+            text-align: center
         b
           font-size: 14px
           font-weight: 300
@@ -304,6 +288,8 @@
           text-align: right
           color: $warm-grey
           display: block
+          +r(767)
+            text-align: center
     &__img
       display: flex
       +r(1040)
