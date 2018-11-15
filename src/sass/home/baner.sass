@@ -17,6 +17,8 @@
       color: $dark-two
       padding-bottom: 50px
       position: relative
+      +r(767)
+        text-align: center
       &:before
         content: ''
         position: absolute
@@ -25,6 +27,9 @@
         height: 4.5px
         border-radius: 2px
         background-color: $dark-two
+        +r(767)
+          left: 50%
+          transform: translate(-50%)
       span
         font-size: 50px
         font-weight: 300
@@ -35,6 +40,8 @@
       line-height: 1.61
       color: $dark-two
       margin-bottom: 30px
+      +r(767)
+        text-align: center
     &__btn
       +center-y
       a
