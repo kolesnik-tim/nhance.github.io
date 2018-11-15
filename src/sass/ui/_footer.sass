@@ -35,8 +35,14 @@
   &__social
     display: flex
     margin-top: 40px
+    +r(767)
+      justify-content: center
     a
       margin-right: 15px
+    li:last-child
+      a
+        +r(767)
+          margin-right: 0
   &__nav
     display: flex
     justify-content: space-between
