@@ -39,7 +39,7 @@
       max-width: 605px
       width: 100%
       +r(767)
-        padding: 25px 20px
+        padding: 20px 15px
         width: 65%
       +r(600)
         width: 100% !important
@@ -52,6 +52,8 @@
         position: relative
         margin-bottom: 55px
         display: block
+        +r(767)
+          text-align: center
         &:before
           content: ''
           position: absolute
@@ -61,6 +63,9 @@
           height: 5px
           border-radius: 2.5px
           background-color: $cerise
+          +r(767)
+            left: 50%
+            transform: translate(-50%)
       h1
         font-size: 40px
         font-weight: 300
@@ -68,11 +73,14 @@
         color: $dark-three
         margin-bottom: 28px
         +r(767)
-          font-size: 30px
+          font-size: 26px
+          text-align: center
       p
         font-size: 14px
         line-height: 1.61
         color: $warm-grey
+        +r(767)
+          text-align: center
   &__description
     padding: 120px 0
     +r(767)
@@ -120,12 +128,16 @@
         margin-bottom: 40px
         +r(767)
           font-size: 25px
+          text-align: center
       p, li
         font-size: 14px
         font-weight: 300
         line-height: 1.96
         color: $dark-two
         margin-bottom: 40px
+      p
+        +r(767)
+          text-align: center
       li
         position: relative
         padding-left: 40px

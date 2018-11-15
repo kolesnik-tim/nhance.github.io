@@ -16,6 +16,8 @@
         font-size: 30px
   &__text
     padding: 100px 0 200px
+    +r(767)
+      padding: 50px 0
     h2
       font-size: 25px
       font-weight: 300
@@ -29,11 +31,15 @@
       margin-bottom: 120px
       +r(767)
         margin-bottom: 70px
+        font-size: 20px
     p, strong, a, b, li
       font-size: 14px
       font-weight: 300
       line-height: 2.14
       color: $dark-three
+      +r(767)
+        text-align: center
+        display: block
     a
       text-decoration: underline
       margin-left: 2px

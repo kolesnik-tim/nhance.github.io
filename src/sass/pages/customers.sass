@@ -44,18 +44,27 @@
       padding: 40px 37px
       img
         margin-bottom: 35px
+        +r(767)
+          position: relative
+          left: 50%
+          transform: translate(-50%)
       p
         margin-bottom: 35px
         font-size: 16px
         font-weight: 300
         line-height: 1.88
         color: $dark-two
+        +r(767)
+          text-align: center
       a
         font-size: 12px
         font-weight: bold
         line-height: 1.67
         color: $dark-two
         text-transform: uppercase
+        +r(767)
+          text-align: center
+          display: block
         &:hover
           text-decoration: underline
         i

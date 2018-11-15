@@ -28,13 +28,13 @@
   &__app
     padding: 125px 0
     +r(767)
-      padding: 50px 0
+      padding: 50px 0 0
     &__block
       +center
       +r(1040)
         margin-bottom: 60px
       +r(550)
-        flex-direction: column
+        flex-direction: column-reverse
       &__text
         max-width: 310px
         width: 100%
@@ -43,8 +43,8 @@
           max-width: 100%
           width: auto
         +r(767)
-          margin-bottom: 20px
-          margin-left: 20px
+          margin-bottom: 40px
+          margin-left: 0px
         h2 
           font-size: 40px
           font-weight: 300
@@ -53,6 +53,8 @@
           padding-bottom: 30px
           margin-bottom: 8px
           position: relative
+          +r(767)
+            text-align: center
           &:before
             content: ''
             position: absolute
@@ -62,11 +64,16 @@
             height: 4.5px
             border-radius: 2px
             background-color: $dark-two
+            +r(767)
+              left: 50%
+              transform: translate(-50%) 
         p
           font-size: 14px
           font-weight: 300
           line-height: 1.79
           color: $dark-two
+          +r(767)
+            text-align: center
       &__img
         display: flex
         align-items: flex-start
@@ -382,6 +389,8 @@
         font-weight: 300
         color: $dark-two
         margin-bottom: 30px
+        +r(767)
+          text-align: center
       li
         font-size: 14px
         font-weight: 300

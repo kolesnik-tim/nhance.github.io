@@ -10,8 +10,10 @@
     &__img
       display: flex
       justify-content: flex-end
+      align-items: center
       +r(767)
         justify-content: center
+        margin-top: 40px
       img
         max-width: 100%
     h1
@@ -23,6 +25,7 @@
       +r(767)
         font-size: 30px
         margin-top: 100px
+        text-align: center
     p
       font-size: 14px
       line-height: 1.61
@@ -31,6 +34,7 @@
       margin-bottom: 40px
       +r(767)
         padding-right: 0
+        text-align: center
     a
       display: flex
       align-items: center
@@ -38,6 +42,8 @@
       line-height: 1.61
       color: $white
       font-weight: 600
+      +r(767)
+        justify-content: center
       &:hover
         text-decoration: underline
       img
@@ -45,6 +51,8 @@
   &__experience
     padding: 100px 0
     background: rgb(242, 242, 242)
+    +r(767)
+      padding: 50px 0 0
     h2
       font-size: 40px
       font-weight: 300
@@ -57,6 +65,7 @@
     p
       font-size: 16px
       font-weight: 300
+      line-height: 1.5
       text-align: center
       color: $dark-two
     &__content
@@ -73,6 +82,7 @@
         box-shadow: none
         background: none
         overflow: visible
+        margin-top: 40px
     &__block
       width: 100%
       box-shadow: 0px 1.5px 20px 0 rgba(0, 0, 0, 0.06)
@@ -107,6 +117,8 @@
           color: $dark-two-80
   &__capability
     padding: 110px 0 140px
+    +r(767)
+      padding: 90px 0 40px
     &__title
       margin-bottom: 120px
       h2
@@ -121,6 +133,7 @@
       p
         font-size: 16px
         font-weight: 300
+        line-height: 1.5
         text-align: center
         color: $dark-two
     &__block
@@ -144,6 +157,7 @@
         top: -70px
         +r(767)
           margin: 0
+          top: 20px
         img
           box-shadow: 0px 1.5px 40px 10px rgba(0, 0, 0, 0.1)
   &__advantages
@@ -154,6 +168,8 @@
       padding: 50px 0
     &__title
       margin-bottom: 120px
+      +r(767)
+        margin-bottom: 50px
       h2
         font-size: 40px
         font-weight: 300
@@ -167,6 +183,7 @@
         font-size: 16px
         font-weight: 300
         text-align: center
+        line-height: 1.5
         color: $dark-two
     &__block
       +center
@@ -266,7 +283,7 @@
       color: $dark-two
       margin-bottom: 20px
       +r(767)
-        font-size: 30px
+        font-size: 28px
     p
       font-size: 14px
       font-weight: 300
