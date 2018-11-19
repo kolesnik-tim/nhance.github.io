@@ -59,3 +59,95 @@
           text-decoration: underline
         img
           margin-right: 15px
+        i
+          color: $pink-red
+          font-size: 10px
+          margin-left: 10px
+  &__form
+    max-width: 457px
+    width: 100%
+    margin-top: 75px
+    b
+      font-size: 14px
+      font-weight: 600
+      margin-bottom: 20px
+      color: $dark-two
+      display: block
+    span
+      font-size: 12px
+      color: rgba(19, 28, 46, 0.6)
+      display: block
+      margin-top: 10px
+    &__block
+      display: flex
+      border-radius: 10px
+      background-color: $white
+      border: 1px solid $pinkish-grey
+      .select-tn
+        position: relative
+        display: inline-block
+        margin-right: 15px
+        select
+          display: none
+        img
+          width: 15px
+          height: 15px
+          margin-left: 20px
+        p
+          padding-left: 10px
+          font-size: 14px
+          color: $dark-two
+        li
+          padding: 10px
+          display: flex
+          &.active
+            background: #eee
+        &__result
+          display: flex
+          width: 100px
+          padding: 19px 0
+          position: relative
+          &:before
+            content: ''
+            position: absolute
+            right: 4px
+            top: 25px
+            border: 8px solid transparent
+            border-top: 8px solid #bdbdbd
+            +tr
+          &.active
+            &:before
+              transform: rotate(180deg)
+              top: 20px
+        &__dorpdown
+          position: absolute
+          top: 100%
+          z-index: 9
+          width: 100%
+          overflow: hidden
+          display: none
+          background: $white
+          border: 1px solid #bdbdbd
+          img
+            margin-left: 0
+      &__input
+        width: 100%
+        input
+          height: 100%
+          font-size: 14px
+          color: $dark-two
+          +placeholder-color($dark-two)
+          padding: 15px 0
+          width: 100%
+      &__submit
+        width: 100px
+        border-left: 1px solid $pinkish-grey
+        input
+          font-size: 12px
+          font-weight: bold
+          color: $dark-two
+          text-transform: uppercase
+          padding: 19px 24px
+          background-color: $white-three
+          border-top-right-radius: 10px
+          border-bottom-right-radius: 10px
