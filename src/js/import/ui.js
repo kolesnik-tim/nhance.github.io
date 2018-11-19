@@ -9,11 +9,6 @@ $('[rel="modal:open"]').on('click', function(event) {
   return false;
 });
 
-//video
-$(window).scroll(function(){
-  var videoEl = document.getElementsByTagName('video')[0];
-  videoEl.play();
-});
 
 
 //tabs

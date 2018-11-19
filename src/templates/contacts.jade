@@ -10,7 +10,8 @@ block content
         .row.center-xs
           .col-md-7.col-sm-10.col-xs-12
             h1 We’d love to hear from you
-            p Whether you have a question about features, trials, pricing, need a demo, or anything else, our team is ready to answer all your questions
+            p
+              | Whether you have a question about features, trials, pricing, need a demo, or anything else, our team is ready to answer all your questions
     .contacts__content
       .container
         .row.start-md.center-xs
@@ -20,29 +21,32 @@ block content
                 strong Address
                 .contacts__block__info
                   b.primary Bangalore
-                  p #271, 2nd Floor, Sri Ganesh Complex, Hosur Main Road, Madiwala, Landmark: Silk Board Junction, Bangalore - 560068.
+                  p
+                    | #271, 2nd Floor, Sri Ganesh Complex, Hosur Main Road, Madiwala, Landmark: Silk Board Junction, Bangalore - 560068.
                   b.secondary Dubai
                   p FS#46, Building 16, Dubai Internet City, TECOM, Dubai, U.A.E.
               li
                 strong Phone number
                 .contacts__block__info
-                  a(href="tel:+918065586557") +91 80 65586557
-                  a(href="tel:+14158002826") +1 415 800 2826
+                  a(href='tel:+918065586557') +91 80 65586557
+                  a(href='tel:+14158002826') +1 415 800 2826
               li
                 strong sales
-                a(href="mailto:sales@nhancenow.com") sales@nhancenow.com
+                a(href='mailto:sales@nhancenow.com') sales@nhancenow.com
               li
                 strong support
-                a(href="mailto:sales@nhancenow.com") support@nhancenow.com
+                a(href='mailto:sales@nhancenow.com') support@nhancenow.com
               li
                 strong we’re hiring
-                a(href="https://angel.co/nhance-now/jobs" target="_blank").btn.btn-secondary see our job openings
+                a.btn.btn-secondary(href='https://angel.co/nhance-now/jobs', target='_blank') see our job openings
           .col-md-6.col-xs-12.start-xs
             form.contacts__form
               .contacts__form__input
-                input(type="text" placeholder="Name" name="Name")
-                input(type="tel" placeholder="Contact Number" name="phone")
-                input(type="email" placeholder="Email ID" name="imail")
-                input(type="text" placeholder="Message" name="message")
+                input(type='text', placeholder='Name', name='customerName')
+                input(type='tel', placeholder='Contact Number', name='customerNumber')
+                input(type='email', placeholder='Email ID', name='customerEmail')
+                input(type='text', placeholder='Message', name='customerMessage')
               .contacts__form__btn
-                input(type="submit" value="submit").btn.btn-secondary
+                input.btn.btn-secondary(type='submit', value='submit')
+              .contacts__form__dialogue__message
+                p Message sent
