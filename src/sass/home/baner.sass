@@ -67,45 +67,61 @@
     max-width: 457px
     width: 100%
     margin-top: 75px
+    +r(767)
+      margin-bottom: 60px
+      position: relative
+      left: 50%
+      transform: translate(-50%)
     &__result
-      display: flex
-      align-items: center
-      margin-top: 75px
       display: none
-      p
-        font-size: 14px
-        font-weight: 600
-        line-height: 1.43
-        color: #31cd64
-        margin-left: 10px
+      +r(767)
+        margin-bottom: 50px
+      &__block
+        display: flex
+        align-items: center
+        margin-top: 75px
+        p
+          font-size: 14px
+          font-weight: 600
+          line-height: 1.43
+          color: #31cd64
+          margin-left: 10px
     b
       font-size: 14px
       font-weight: 600
       margin-bottom: 20px
       color: $dark-two
       display: block
+      +r(767)
+        text-align: center
     span
       font-size: 12px
       color: rgba(19, 28, 46, 0.6)
       display: block
       margin-top: 10px
+      +r(767)
+        text-align: center
     &__block
       display: flex
       border-radius: 10px
       background-color: $white
       border: 1px solid $pinkish-grey
       &.error
-        border-color: #fd3e39
+        border-color: #fd3e39 !important
       .select-tn
         position: relative
         display: inline-block
         margin-right: 15px
+        +r(767)
+          margin-right: 7px
         select
           display: none
         img
           width: 15px
           height: 15px
           margin-left: 20px
+          +r(767)
+            margin-left: 10px
         p
           padding-left: 10px
           font-size: 14px
@@ -120,6 +136,8 @@
           width: 100px
           padding: 19px 0
           position: relative
+          +r(767)
+            width: 88px
           &:before
             content: ''
             position: absolute
@@ -155,6 +173,8 @@
       &__submit
         width: 100px
         border-left: 1px solid $pinkish-grey
+        +r(767)
+          width: 80px
         input
           font-size: 12px
           font-weight: bold
@@ -164,3 +184,5 @@
           background-color: $white-three
           border-top-right-radius: 10px
           border-bottom-right-radius: 10px
+          +r(767)
+            padding: 19px 15px

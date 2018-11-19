@@ -152,3 +152,21 @@ $(document).mouseup(function(e) {
     result.removeClass('active');
   }
 });
+
+
+//submit home
+$('.baner__form__block__submit input').on('click', function(event){
+  if($(this).closest('.baner__form__block__submit').prev('.baner__form__block__input').find('input').val().length === 10){
+    event.preventDefault();
+    $(this).closest('.baner__form__content').fadeOut();
+    setTimeout(function(){
+      $('.baner__form__result').fadeIn();
+      setTimeout(function(){
+        $('.baner__form__result').fadeOut();
+      }, 3000)
+    }, 400);
+} else{
+  event.preventDefault();
+  $(this).closest('.baner__form__block').addClass('error');
+}
+});

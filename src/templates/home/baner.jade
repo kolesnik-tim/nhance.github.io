@@ -18,35 +18,37 @@ section#baner.baner
             a(href='mobile_tour.html') Learn More
               i.icon.icon-arrow-right
         form.baner__form
-          b Check out a Digital Experience Card
-          .baner__form__block
-            .select-tn
-              select(value="1")
-                option(value="1") +91
-                option(value="2") +92
-                option(value="3") +93
-                option(value="4") +94
-              .select-tn__result
-                img(src="img/country/india_flag.png", alt="")
-                p +91
-              ul.select-tn__dorpdown
-                li.active
+          .baner__form__content
+            b Check out a Digital Experience Card
+            .baner__form__block
+              .select-tn
+                select(value="1")
+                  option(value="1") +91
+                  option(value="2") +92
+                  option(value="3") +93
+                  option(value="4") +94
+                .select-tn__result
                   img(src="img/country/india_flag.png", alt="")
                   p +91
-                li
-                  img(src="img/country/usa.png", alt="")
-                  p +92
-                li
-                  img(src="img/country/uae_flag.png", alt="")
-                  p +93
-                li
-                  img(src="img/country/Singapore_flag.png", alt="")
-                  p +94
-            .baner__form__block__input
-              input(type="tel" name="tel" placeholder="Mobile Number" required)
-            .baner__form__block__submit
-              input(type="submit" value="submit")
-          span Your privacy matters to us. We do not store your mobile number.
+                ul.select-tn__dorpdown
+                  li.active
+                    img(src="img/country/india_flag.png", alt="")
+                    p +91
+                  li
+                    img(src="img/country/usa.png", alt="")
+                    p +92
+                  li
+                    img(src="img/country/uae_flag.png", alt="")
+                    p +93
+                  li
+                    img(src="img/country/Singapore_flag.png", alt="")
+                    p +94
+              .baner__form__block__input
+                input(type="tel" name="tel" placeholder="Mobile Number" required)
+              .baner__form__block__submit
+                input(type="submit" value="submit")
+            span Your privacy matters to us. We do not store your mobile number.
         .baner__form__result
-          img(src="img/icon/sucess-mark.png" srcset="img/icon/sucess-mark@2x.png 2x, img/icon/sucess-mark@3x.png 3x")
-          p Thank you! Your Digital Experience Cards have been sent to you.<br>Please follow the intructions in the SMS to view them.
+          .baner__form__result__block
+            img(src="img/icon/sucess-mark.png" srcset="img/icon/sucess-mark@2x.png 2x, img/icon/sucess-mark@3x.png 3x")
+            p Thank you! Your Digital Experience Cards have been sent to you.<br>Please follow the intructions in the SMS to view them.
