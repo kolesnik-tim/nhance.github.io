@@ -165,6 +165,8 @@ $('.baner__form__block__submit input').on('click', function(event){
         $('.baner__form__result').fadeOut();
         setTimeout(function(){
           $('.baner__form__content').fadeIn()
+          $('.baner__form__block').removeClass('error');
+          $('.baner__form__block__input input').val('');
         }, 400)
       }, 3000)
     }, 400);
