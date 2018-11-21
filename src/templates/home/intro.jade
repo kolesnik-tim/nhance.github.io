@@ -21,7 +21,7 @@ section.intro
           a(href="#").intro__form__open
             img(src="img/icon/get-feel.png" srcset="img/icon/get-feel@2x.png 2x, img/icon/get-feel@3x.png 3x")
             | Get a Feel
-        form.intro__form
+        form(method="post").intro__form
           .intro__form__close
             span
           .intro__form__content
@@ -55,6 +55,7 @@ section.intro
                 button.ld-over
                   i.icon.icon-arrow-right
                   .ld.ld-ring.ld-spin
+                input(type="submit" value="")
             span Your privacy matters to us. We do not store your mobile number.
         .intro__form__result
           .intro__form__result__block
