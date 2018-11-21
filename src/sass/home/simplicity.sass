@@ -1,6 +1,6 @@
 .simplicity
   padding: 100px 0
-  background-color: $dark
+  background-color: $white
   +r(767)
     padding-bottom: 0
   &__title
@@ -9,7 +9,7 @@
       font-weight: 300
       line-height: 1.5
       text-align: center
-      color: $white-three
+      color: $dark
       margin-bottom: 40px
       +r(767)
         font-size: 25px
@@ -18,7 +18,7 @@
       font-weight: 300
       line-height: 1.72
       text-align: center
-      color: $white
+      color: $dark
       margin-bottom: 100px
       +r(767)
         font-size: 14px
@@ -36,7 +36,7 @@
       font-size: 12px
       line-height: 1.25
       text-align: center
-      color: $white-80
+      color: rgba(19, 28, 47, 0.8)
       position: relative
       display: inline-block
       max-width: 160px
@@ -55,10 +55,10 @@
         transform: translate(-50%)
     &__img
       height: 320px
-      +center
+      +center-column
       position: relative
       width: 100%
-      border-right: 1px solid rgba($white, 0.3)
+      border-right: 1px solid rgba($dark, 0.3)
       padding-top: 20px
       &--last
         img
@@ -66,28 +66,29 @@
       +r(767)
         height: auto
         border-right: none
-        border-bottom: 1px solid rgba($white, 0.3)
+        border-bottom: 1px solid rgba($dark, 0.3)
         padding-bottom: 40px
       &:before, &:after
         content: ''
         position: absolute
         right: -100px
         border: 60px solid transparent
-        border-left: 40px solid rgba($white, 0.3)
+        border-left: 40px solid rgba($dark, 0.3)
         +r(767)
           border: 60px solid transparent
-          border-top: 40px solid rgba($white, 0.3)
+          border-top: 40px solid rgba($dark, 0.3)
           right: auto
           bottom: -100px
       &:after
-        border-left: 40px solid $dark
+        border-left: 40px solid $white
         right: -99px
         +r(767)
           border: 60px solid transparent
-          border-top: 40px solid $dark
+          border-top: 40px solid $white
           right: auto
           bottom: -99px
       img
+        box-shadow: 0px 1.5px 20px 0 rgba(0, 0, 0, 0.06)
         +r(1150)
           width: 70%
         +r(767)
@@ -96,21 +97,18 @@
       p
         +center-column
         font-size: 12px
-        font-weight: bold
-        color: $blue-grey
-        text-transform: uppercase
-        width: 110px
+        font-weight: normal
+        color: $dark
+        width: 87px
         text-align: center
         border-right: 1px solid rgba($white, 0.3)
-        margin-right: 30px
+        margin-top: 40px
         +r(1024)
           font-size: 10px
         +r(767)
           width: 140px
           margin-right: 0
-        &:last-child
-          border: none
-          margin: 0
         img
-          margin-bottom: 20px
-          width: 35px
+          margin-bottom: 15px
+          width: 85px
+          box-shadow: none

@@ -155,23 +155,35 @@ $(document).mouseup(function(e) {
 
 
 //submit home
-$('.baner__form__block__submit input').on('click', function(event){
-  if($(this).closest('.baner__form__block__submit').prev('.baner__form__block__input').find('input').val().length === 10){
-    event.preventDefault();
-    $(this).closest('.baner__form__content').fadeOut();
+//open
+$(".intro__form__open").on('click', function(event){
+  event.preventDefault();
+  $('.intro__btn').fadeOut();
+  setTimeout(function(){
+    $('.intro__form').fadeIn();
+  }, 400)
+})
+//close
+$(".intro__form__close").on('click', function(){
+  $('.intro__form').fadeOut();
+  setTimeout(function(){
+    $('.intro__btn').fadeIn();
+  }, 400)
+})
+//submit
+$('.intro__form__block__submit button').on('click', function(event){
+  event.preventDefault();
+  if($('.intro__form__block__input').find('input').val().length === 10){
+    $(this).closest('.intro__form').fadeOut();
     setTimeout(function(){
-      $('.baner__form__result').fadeIn();
+      $('.intro__form__result').fadeIn();
       setTimeout(function(){
-        $('.baner__form__result').fadeOut();
+        $('.intro__form__result').fadeOut();
         setTimeout(function(){
-          $('.baner__form__content').fadeIn()
-          $('.baner__form__block').removeClass('error');
-          $('.baner__form__block__input input').val('');
+          $('.intro__form').fadeIn()
+          $('.intro__form__block__input input').val('');
         }, 400)
       }, 3000)
     }, 400);
-} else{
-  event.preventDefault();
-  $(this).closest('.baner__form__block').addClass('error');
-}
+  }
 });
