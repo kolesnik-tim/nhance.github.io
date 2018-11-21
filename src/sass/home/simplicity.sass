@@ -54,7 +54,7 @@
         left: 50%
         transform: translate(-50%)
     &__img
-      height: 320px
+      height: 330px
       +center-column
       position: relative
       width: 100%
@@ -62,7 +62,11 @@
       padding-top: 20px
       &--last
         img
-          width: 180px
+          width: 220px
+          height: 380px
+          box-shadow: none !important
+          +r(1160)
+            height: auto
       +r(767)
         height: auto
         border-right: none

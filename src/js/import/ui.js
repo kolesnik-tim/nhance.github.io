@@ -174,14 +174,16 @@ $(".intro__form__close").on('click', function(){
 $('.intro__form__block__submit button').on('click', function(event){
   event.preventDefault();
   if($('.intro__form__block__input').find('input').val().length === 10){
+    $(this).addClass('running')
     $(this).closest('.intro__form').fadeOut();
     setTimeout(function(){
       $('.intro__form__result').fadeIn();
       setTimeout(function(){
         $('.intro__form__result').fadeOut();
         setTimeout(function(){
-          $('.intro__btn').fadeIn()
+          $('.intro__btn').fadeIn();
           $('.intro__form__block__input input').val('');
+          $('.intro__form__block__submit button').removeClass('running');
         }, 400)
       }, 3000)
     }, 400);
