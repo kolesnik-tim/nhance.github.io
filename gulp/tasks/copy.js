@@ -33,11 +33,7 @@ gulp.task('copy:img', function () {
         ])
         .pipe(gulp.dest(config.dest.img));
 });
-gulp.task('copy:video', function () {
-    return gulp
-        .src(config.src.img + '/*.mp4')
-        .pipe(gulp.dest(config.dest.img));
-});
+
 gulp.task('copy:wow', function () {
     return gulp
         .src(config.src.js + '/*.*')
@@ -50,7 +46,6 @@ gulp.task('copy', [
     // 'copy:lib',
     // 'copy:data',
     'copy:fonts',
-    'copy:video',
     'copy:wow'
 ]);
 gulp.task('copy:watch', function () {

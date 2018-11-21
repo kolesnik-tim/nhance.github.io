@@ -8,38 +8,7 @@ meta(name="twitter:description" content="Page description less than 200 characte
 meta(name="twitter:creator" content="@author_handle")
 //- Twitter Summary card images must be at least 120x120px
 meta(name="twitter:image" content="http://www.example.com/image.jpg")
-<!-- Global site tag (gtag.js) - Google Analytics -->
-script(async src="https://www.googletagmanager.com/gtag/js?id=UA-118011204-1")
-script.
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-118011204-1');
-script.
-  window.intercomSettings = {
-    app_id: "gjs8bj49"
-  };
-script.
-  (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/gjs8bj49';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
-<!-- Facebook Pixel Code -->
-script.
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '730505237311228');
-  fbq('track', 'PageView');
-//- <noscript><img height="1" width="1" style="display:none"
-//-   src="https://www.facebook.com/tr?id=730505237311228&ev=PageView&noscript=1"
-//- /></noscript>
-noscript
-  img(height='1', width='1', style='display:none', src='https://www.facebook.com/tr?id=730505237311228&ev=PageView&noscript=1')
 
-<!-- End Facebook Pixel Code -->
 
 //Open Graph data
 meta(property="og:title" content="Title Here")

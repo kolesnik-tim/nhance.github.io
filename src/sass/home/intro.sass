@@ -1,75 +1,244 @@
 .intro
   height: 795px
-  background: $dark-two
+  background-image: radial-gradient(circle at 0 0, #0c1629, #0c1629, #010203)
+  // background-image: radial-gradient(top left #0c1629 bottom right #010203)
   +center
   position: relative
-  overflow: hidden
-  &:before
-    content: ''
-    position: absolute
-    height: 100%
-    width: 100%
-    left: 0
-    top: 0
-    background: rgba(#131c2e, 0.92)
-    z-index: 2
+  padding-top: 100px
   +r(767)
-    height: 650px
-  video
-    position: absolute
-    top: 0
-    left: 50%
-    transform: translate(-50%)
-    height: 100%
-    z-index: 1
-    +r(767)
-      display: none
-    +rmin(1400)
-      width: 100%
-      height: auto
-      left: 0
-      top: 50%
-      transform: translate(0, -50%)
-
+    +center-column
+    height: auto
+    flex-direction: column-reverse
+    padding-top: 150px
+  // &:before
+  //   content: ''
+  //   position: absolute
+  //   height: 100%
+  //   width: 100%
+  //   left: 0
+  //   top: 0
+  //   background: rgba(#131c2e, 0.92)
+  //   z-index: 2
+  // +r(767)
+  //   height: 650px
+  // video
+  //   position: absolute
+  //   top: 0
+  //   left: 50%
+  //   transform: translate(-50%)
+  //   height: 100%
+  //   z-index: 1
+  //   +r(767)
+  //     display: none
+  //   +rmin(1400)
+  //     width: 100%
+  //     height: auto
+  //     left: 0
+  //     top: 50%
+  //     transform: translate(0, -50%)
+  
   .container
     position: relative
     z-index: 3
-  strong
-    font-size: 16px
-    font-weight: bold
-    line-height: 1.56
-    color: $cerise
-    text-transform: uppercase
-    margin-bottom: 25px
-    display: block
+  &__img
+    position: absolute
+    right: 0
+    z-index: 3
+    height: 530px
+    width: 100%
     +r(767)
-      font-size: 12px
-  h2
-    font-size: 46px
-    font-weight: 300
-    line-height: 1.37
-    letter-spacing: 1.2px
-    color: $white
-    margin-bottom: 35px
-    +r(767)
-      font-size: 25px
-      br
-        display: none
-  p
-    font-size: 16px
-    font-weight: 300
-    line-height: 1.56
-    text-align: center
-    color: $white-60
-    margin-bottom: 65px
-    +r(767)
-      br
-        display: none
+      position: relative
+      height: auto
+    .row
+      height: 100%
+    img
+      height: 100%
+      +r(1040)
+        position: relative
+        left: -50px
+      +r(767)
+        max-width: 100%
+        height: auto
+        max-height: 100%
+        left: 0
+  &__title
+    h2
+      font-size: 40px
+      font-weight: 300
+      line-height: 1.25
+      color: $white
+      margin-bottom: 35px
+      +r(1040)
+        br
+          display: none
+      +r(767)
+        font-size: 30px
+        text-align: center
+    p
+      font-size: 14px
+      font-weight: 300
+      line-height: 1.61
+      letter-spacing: 0.5px
+      color: $white
+      margin-bottom: 90px
+      +r(767)
+        text-align: center
   &__btn
     display: flex
-    justify-content: center
-    .btn-primary
-      margin-right: 10px
-      +r(450)
-        margin: 0
-        margin-bottom: 20px
+    align-items: center
+    +r(767)
+      margin-bottom: 50px
+    img
+      margin-bottom: 20px
+    a
+      width: 100px
+      height: 103px
+      border-radius: 10px
+      border: 1px solid #56688b
+      margin-right: 15px
+      +center-column
+      font-size: 12px
+      line-height: 2.08
+      color: rgba(255, 255, 255, 0.5)
+      &:hover
+        background: #56688b 
+  &__form
+    position: relative
+    display: none
+    width: 327px
+    +r(767)
+      margin-bottom: 60px
+      left: 50%
+      transform: translate(-50%)
+    &__close
+      width: 30px
+      height: 30px
+      position: absolute
+      right: 0px
+      top: -8px
+      span
+        &:before, &:after
+          content: ''
+          width: 15px
+          height: 3px
+          background: $pinkish-grey
+          position: absolute
+          top: 15px
+          right: 8px
+          +tr
+        &:before
+          transform: rotate(45deg)
+        &:after
+          transform: rotate(-45deg)
+      &:hover
+        span:before, span:after
+          background: $pink-red
+    &__result
+      display: none
+      +r(767)
+        margin-bottom: 50px
+      &__block
+        display: flex
+        align-items: center
+        margin-top: 75px
+        p
+          font-size: 14px
+          font-weight: 600
+          line-height: 1.43
+          color: #31cd64
+          margin-left: 10px
+    b
+      font-size: 14px
+      font-weight: normal
+      margin-bottom: 20px
+      color: $white
+      display: block
+      +r(767)
+        text-align: center
+    span
+      font-size: 12px
+      color: rgba(255, 255, 255, 0.2)
+      display: block
+      margin-top: 10px
+      +r(767)
+        text-align: center
+    &__block
+      display: flex
+      align-items: center
+      height: 47.5px
+      border-radius: 23.8px
+      background-color: #f6f6f6
+      // &.error
+      //   border-color: #fd3e39 !important
+      .select-tn
+        position: relative
+        display: inline-block
+        margin-right: 15px
+        +r(767)
+          margin-right: 7px
+        select
+          display: none
+        img
+          width: 15px
+          height: 15px
+          margin-left: 20px
+          +r(767)
+            margin-left: 10px
+        p
+          padding-left: 10px
+          font-size: 14px
+          color: $dark-two
+        li
+          padding: 10px
+          display: flex
+          &.active
+            background: #eee
+        &__result
+          display: flex
+          width: 100px
+          padding: 19px 0
+          position: relative
+          +r(767)
+            width: 88px
+          &:before
+            content: ''
+            position: absolute
+            right: 4px
+            top: 25px
+            border: 8px solid transparent
+            border-top: 8px solid #bdbdbd
+            +tr
+          &.active
+            &:before
+              transform: rotate(180deg)
+              top: 20px
+        &__dorpdown
+          position: absolute
+          top: 100%
+          z-index: 9
+          width: 100%
+          overflow: hidden
+          display: none
+          background: $white
+          border: 1px solid #bdbdbd
+          img
+            margin-left: 0
+      &__input
+        width: 100%
+        input
+          height: 100%
+          font-size: 14px
+          color: $dark-two
+          +placeholder-color($dark-two)
+          padding: 15px 0
+          width: 100%
+          background: #f6f6f6
+      &__submit
+        padding-right: 10px
+        button
+          width: 29px
+          height: 29px
+          opacity: 0.5
+          background-color: $pinkish-grey
+          +center
+          border-radius: 100%
