@@ -190,33 +190,3 @@ $('.intro__form__block__submit button').on('click', function(event){
   }
 });
 
-
-
-// //Ajax отправка формы 
-// document.querySelectorAll('form').forEach(function(item) {  
-//   item.addEventListener('submit', function(event) {    
-//     sendAjaxForm(this, event);  
-//   })
-// });  
-// function sendAjaxForm(form, event) {    
-//   var fields = form.querySelectorAll('input, select')    
-//   var formHasError =  Array.prototype.reduce.call(fields, function(invalidCount, currentItem) {      
-//     if (currentItem.matches(':invalid')) invalidCount++;    
-//   }, 0);    
-//   if (formHasError) {      
-//     return true;    
-//   } else {      
-//     event.preventDefault();      
-//     var formData = new FormData(form);      
-//     var xhr = new XMLHttpRequest();      
-//     xhr.open('POST', 'send.php');      
-//     xhr.onreadystatechange = function() {        
-//       if ((xhr.readyState === 4) && (xhr.status === 200)) {          
-//         data = xhr.responseText;          
-//         form.outerHTML = '<h2 style-"color: #fdb827; text-align: center;">Мы перезвоним Вам в ближайшее время для подтверждения заказа</h2><h3 style="color: #fdb827; text-align: center;">Спасибо, Ваш заказ отправлен</h3>';        
-//       }      
-//     }      
-//     xhr.send(formData);      
-//     return false;    
-//   }  
-// }

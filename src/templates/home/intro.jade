@@ -11,54 +11,55 @@ section.intro
           p Introducing 
             strong Digital Experience Card
             | , a modern way to engage with digitally empowered customers. Deliver dynamic post purchase experiences that boost loyalty and accelerates growth.
-        .intro__btn
-          a(href='#video' rel="modal:open")
-            img(src="img/icon/play-icon.png" srcset="img/icon/play-icon@2x.png 2x, img/icon/play-icon@3x.png 3x")
-            | Watch Video
-          a(href='mobile_tour.html')
-            img(src="img/icon/learn-more.png" srcset="img/icon/learn-more@2x.png 2x, img/icon/learn-more@3x.png 3x")
-            | Learn More
-          a(href="#").intro__form__open
-            img(src="img/icon/get-feel.png" srcset="img/icon/get-feel@2x.png 2x, img/icon/get-feel@3x.png 3x")
-            | Get a Feel
-        form(method="post").intro__form
-          .intro__form__close
-            span
-          .intro__form__content
-            b Check out a Digital Experience Card
-            .intro__form__block
-              .select-tn
-                select(value="1")
-                  option(value="1") +91
-                  option(value="2") +92
-                  option(value="3") +93
-                  option(value="4") +94
-                .select-tn__result
-                  img(src="img/country/india_flag.png", alt="")
-                  p +91
-                ul.select-tn__dorpdown
-                  li.active
+        .intro__content
+          .intro__btn
+            a(href='#video' rel="modal:open")
+              img(src="img/icon/play-icon.png" srcset="img/icon/play-icon@2x.png 2x, img/icon/play-icon@3x.png 3x")
+              | Watch Video
+            a(href='mobile_tour.html')
+              img(src="img/icon/learn-more.png" srcset="img/icon/learn-more@2x.png 2x, img/icon/learn-more@3x.png 3x")
+              | Learn More
+            a(href="#").intro__form__open
+              img(src="img/icon/get-feel.png" srcset="img/icon/get-feel@2x.png 2x, img/icon/get-feel@3x.png 3x")
+              | Get a Feel
+          form(method="post").intro__form
+            .intro__form__close
+              span
+            .intro__form__content
+              b Check out a Digital Experience Card
+              .intro__form__block
+                .select-tn
+                  select(value="1" name="code")
+                    option(value="1") +91
+                    option(value="2") +92
+                    option(value="3") +93
+                    option(value="4") +94
+                  .select-tn__result
                     img(src="img/country/india_flag.png", alt="")
                     p +91
-                  li
-                    img(src="img/country/usa.png", alt="")
-                    p +92
-                  li
-                    img(src="img/country/uae_flag.png", alt="")
-                    p +93
-                  li
-                    img(src="img/country/Singapore_flag.png", alt="")
-                    p +94
-              .intro__form__block__input
-                input(type="tel" name="tel" placeholder="Mobile Number" required)
-              .intro__form__block__submit
-                button.ld-over
-                  i.icon.icon-arrow-right
-                  .ld.ld-ring.ld-spin
-                input(type="submit" value="")
-            span Your privacy matters to us. We do not store your mobile number.
-        .intro__form__result
-          .intro__form__result__block
-            img(src="img/icon/sucess-mark.png" srcset="img/icon/sucess-mark@2x.png 2x, img/icon/sucess-mark@3x.png 3x")
-            p Thank you! Your Digital Experience Cards have been <br>sent to you. Please follow the intructions in the SMS <br>to view them.
+                  ul.select-tn__dorpdown
+                    li.active
+                      img(src="img/country/india_flag.png", alt="")
+                      p +91
+                    li
+                      img(src="img/country/usa.png", alt="")
+                      p +92
+                    li
+                      img(src="img/country/uae_flag.png", alt="")
+                      p +93
+                    li
+                      img(src="img/country/Singapore_flag.png", alt="")
+                      p +94
+                .intro__form__block__input
+                  input(type="tel" name="tel" placeholder="Mobile Number" required)
+                .intro__form__block__submit
+                  button.ld-over
+                    i.icon.icon-arrow-right
+                    .ld.ld-ring.ld-spin
+                  input(type="submit" value="")
+              span Your privacy matters to us. We do not store your mobile number.
+          .intro__form__result
+            .intro__form__result__block
+              img(src="img/icon/sucess-mark.png" srcset="img/icon/sucess-mark@2x.png 2x, img/icon/sucess-mark@3x.png 3x")
+              p Thank you! Your Digital Experience Cards have been <br>sent to you. Please follow the intructions in the SMS <br>to view them.
       .col-md-7.col-sm-5
