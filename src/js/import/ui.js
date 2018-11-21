@@ -180,7 +180,7 @@ $('.intro__form__block__submit button').on('click', function(event){
       setTimeout(function(){
         $('.intro__form__result').fadeOut();
         setTimeout(function(){
-          $('.intro__form').fadeIn()
+          $('.intro__btn').fadeIn()
           $('.intro__form__block__input input').val('');
         }, 400)
       }, 3000)
