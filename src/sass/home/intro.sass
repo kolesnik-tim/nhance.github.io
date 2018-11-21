@@ -88,12 +88,18 @@
         margin-bottom: 50px
   &__content
     height: 110px
+    position: relative
+    width: 100%
     +r(767)
       margin-bottom: 40px
   &__btn
     display: flex
     align-items: center
     height: 110px
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
     +r(767)
       margin-bottom: 50px
       justify-content: center
@@ -120,6 +126,9 @@
     display: none
     width: 327px
     height: 110px
+    position: absolute
+    top: 0
+    left: 0
     +r(767)
       left: 50%
       transform: translate(-50%)
@@ -150,19 +159,24 @@
           background: $pink-red
     &__result
       display: none
-      height: 110px
+      width: 100%
+      position: absolute
+      top: 0
+      left: 0
       +r(767)
         margin-bottom: 50px
       &__block
         display: flex
         align-items: flex-start
-        margin-top: 75px
         p
           font-size: 14px
           font-weight: 600
           line-height: 1.43
           color: #31cd64
           margin-left: 10px
+          +r(767)
+            br
+              display: none
     b
       font-size: 14px
       font-weight: normal
