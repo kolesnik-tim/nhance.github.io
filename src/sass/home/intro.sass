@@ -215,8 +215,10 @@
       height: 47.5px
       border-radius: 23.8px
       background-color: #f6f6f6
-      // &.error
-      //   border-color: #fd3e39 !important
+      border: 1.5px solid transparent
+      +tr
+      &.error
+        border-color: #fd3e39 !important
       .select-tn
         position: relative
         display: inline-block
@@ -277,7 +279,7 @@
           font-size: 14px
           color: $dark-two
           +placeholder-color($dark-two)
-          padding: 15px 0
+          padding: 12px 0
           width: 100%
           background: #f6f6f6
       &__submit

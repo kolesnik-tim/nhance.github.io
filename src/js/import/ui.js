@@ -184,9 +184,12 @@ $('.intro__form__block__submit button').on('click', function(event){
           $('.intro__btn').removeClass('no-active');
           $('.intro__form__block__input input').val('');
           $('.intro__form__block__submit button').removeClass('running');
+          $('.intro__form__block').removeClass('error');
         }, 400)
       }, 3000)
     }, 400);
+  } else{
+    $('.intro__form__block').addClass('error')
   }
 });
 //number
