@@ -200,4 +200,5 @@ $('.intro__form__block__input input').bind('keypress', function (event) {
      event.preventDefault();
      return false;
   }
+  $('.intro__form__block').removeClass('error');
 });
