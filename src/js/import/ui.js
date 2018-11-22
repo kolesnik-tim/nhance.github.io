@@ -158,16 +158,16 @@ $(document).mouseup(function(e) {
 //open
 $(".intro__form__open").on('click', function(event){
   event.preventDefault();
-  $('.intro__btn').fadeOut();
+  $('.intro__btn').addClass('no-active');
   setTimeout(function(){
-    $('.intro__form').fadeIn();
+    $('.intro__form').addClass('active');
   }, 400)
 })
 //close
 $(".intro__form__close").on('click', function(){
-  $('.intro__form').fadeOut();
+  $('.intro__form').removeClass('active');
   setTimeout(function(){
-    $('.intro__btn').fadeIn();
+    $('.intro__btn').removeClass('no-active');
   }, 400)
 })
 //submit
@@ -175,13 +175,13 @@ $('.intro__form__block__submit button').on('click', function(event){
   event.preventDefault();
   if($('.intro__form__block__input').find('input').val().length === 10){
     $(this).addClass('running')
-    $(this).closest('.intro__form').fadeOut();
+    $(this).closest('.intro__form').removeClass('active');
     setTimeout(function(){
-      $('.intro__form__result').slideDown();
+      $('.intro__form__result').addClass('active');
       setTimeout(function(){
-        $('.intro__form__result').slideUp();
+        $('.intro__form__result').removeClass('active');
         setTimeout(function(){
-          $('.intro__btn').fadeIn();
+          $('.intro__btn').removeClass('no-active');
           $('.intro__form__block__input input').val('');
           $('.intro__form__block__submit button').removeClass('running');
         }, 400)
@@ -189,4 +189,12 @@ $('.intro__form__block__submit button').on('click', function(event){
     }, 400);
   }
 });
-
+//number
+$('.intro__form__block__input input').bind('keypress', function (event) {
+  var regex = new RegExp("^[0-9]+$");
+  var key = String.fromCharCode(!event.charCode ? event.which : event.charCode);
+  if (!regex.test(key)) {
+     event.preventDefault();
+     return false;
+  }
+});

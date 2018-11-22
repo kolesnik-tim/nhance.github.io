@@ -101,6 +101,12 @@
     top: 0
     left: 0
     width: 100%
+    +tr
+    visibility: visible
+    opacity: 1
+    &.no-active
+      visibility: hidden
+      opacity: 0
     +r(767)
       margin-bottom: 50px
       justify-content: center
@@ -124,12 +130,17 @@
         background: #56688b 
   &__form
     position: relative
-    display: none
     width: 327px
     height: 110px
     position: absolute
     top: 0
     left: 0
+    visibility: hidden
+    opacity: 0
+    +tr
+    &.active
+      visibility: visible
+      opacity: 1
     +r(767)
       left: 50%
       transform: translate(-50%)
@@ -159,11 +170,16 @@
         span:before, span:after
           background: $pink-red
     &__result
-      display: none
       width: 100%
       position: absolute
       top: 0
       left: 0
+      visibility: hidden
+      opacity: 0
+      +tr
+      &.active
+        visibility: visible
+        opacity: 1
       +r(767)
         margin-bottom: 50px
       &__block
