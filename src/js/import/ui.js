@@ -177,9 +177,9 @@ $('.intro__form__block__submit button').on('click', function(event){
     $(this).addClass('running')
     $(this).closest('.intro__form').fadeOut();
     setTimeout(function(){
-      $('.intro__form__result').fadeIn();
+      $('.intro__form__result').slideDown();
       setTimeout(function(){
-        $('.intro__form__result').fadeOut();
+        $('.intro__form__result').slideUp();
         setTimeout(function(){
           $('.intro__btn').fadeIn();
           $('.intro__form__block__input input').val('');
