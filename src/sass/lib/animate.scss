@@ -264,18 +264,13 @@
     transform: translate3d(0, 0, 0);
   }
 
-  10%,
   30%,
-  50%,
-  70%,
-  90% {
+  65% {
     -webkit-transform: translate3d(-10px, 0, 0);
     transform: translate3d(-10px, 0, 0);
   }
 
-  20%,
-  40%,
-  60%,
+  50%,
   80% {
     -webkit-transform: translate3d(10px, 0, 0);
     transform: translate3d(10px, 0, 0);

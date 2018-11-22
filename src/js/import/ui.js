@@ -174,22 +174,27 @@ $(".intro__form__close").on('click', function(){
 $('.intro__form__block__submit button').on('click', function(event){
   event.preventDefault();
   if($('.intro__form__block__input').find('input').val().length === 10){
-    $(this).addClass('running')
-    $(this).closest('.intro__form').removeClass('active');
+    $(this).addClass('running');
     setTimeout(function(){
-      $('.intro__form__result').addClass('active');
+      $('.intro__form__block__submit button').closest('.intro__form').removeClass('active');
       setTimeout(function(){
-        $('.intro__form__result').removeClass('active');
+        $('.intro__form__result').addClass('active');
         setTimeout(function(){
-          $('.intro__btn').removeClass('no-active');
-          $('.intro__form__block__input input').val('');
-          $('.intro__form__block__submit button').removeClass('running');
-          $('.intro__form__block').removeClass('error');
-        }, 400)
-      }, 3000)
-    }, 400);
+          $('.intro__form__result').removeClass('active');
+          setTimeout(function(){
+            $('.intro__btn').removeClass('no-active');
+            $('.intro__form__block__input input').val('');
+            $('.intro__form__block__submit button').removeClass('running');
+            $('.intro__form__block').removeClass('shake');
+          }, 400)
+        }, 3000)
+      }, 400);
+    }, 1600);
   } else{
-    $('.intro__form__block').addClass('error')
+    $('.intro__form__block').addClass('shake');
+    setTimeout(function(){
+      $('.intro__form__block').removeClass('shake');
+    }, 500)
   }
 });
 //number
@@ -200,5 +205,5 @@ $('.intro__form__block__input input').bind('keypress', function (event) {
      event.preventDefault();
      return false;
   }
-  $('.intro__form__block').removeClass('error');
+  $('.intro__form__block').removeClass('shake');
 });
