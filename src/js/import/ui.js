@@ -207,11 +207,3 @@ $('.intro__form__block__input input').bind('keypress', function (event) {
   }
   $('.intro__form__block').removeClass('shake');
 });
-
-
-document.addEventListener('touchmove', function(event) {
-  event = event.originalEvent || event;
-  if (event.scale !== 1) {
-     event.preventDefault();
-  }
-}, false);
