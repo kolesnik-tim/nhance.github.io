@@ -4,7 +4,8 @@
     padding-top: 100px
     background-color: $white-six
     +r(767)
-      height: 480px
+      height: auto
+      padding-bottom: 40px
     .container
       position: relative
       height: 100%
@@ -175,8 +176,8 @@
     .app-function__intro
       +r(900)
         height: 740px
-      +r(600)
-        height: 420px
+      +r(767)
+        height: auto
       img
         right: 18%
         +r(1150)
@@ -190,6 +191,8 @@
     .app-function__intro__block
       max-width: 715px
       margin-bottom: 50px
+      +r(767)
+        margin-bottom: 0
     .app-function__intro img
       right: 18%
       +r(1024)
@@ -210,9 +213,6 @@
           right: 0
           width: 37%
   &.advocacy
-    .app-function__intro
-      +r(767)
-        height: 500px
     .app-function__intro img
       right: 18%
       bottom: 25px
@@ -231,3 +231,4 @@
         padding: 10px 20px
         width: 100%
         max-width: 100%
+        margin-bottom: 0
