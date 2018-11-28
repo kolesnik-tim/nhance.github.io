@@ -621,6 +621,13 @@
     </div>
     <!--END out-->
     <!--LOAD SCRIPTS-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+    <script>
+      const el = document.querySelector('img');
+      const observer = lozad(el); // passing a `NodeList` (e.g. `document.querySelectorAll()`) is also valid
+      observer.observe();
+
+    </script>
     <script>
       var scr = {
         "scripts": [
