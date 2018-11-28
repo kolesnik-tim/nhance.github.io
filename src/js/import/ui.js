@@ -207,3 +207,9 @@ $('.intro__form__block__input input').bind('keypress', function (event) {
   }
   $('.intro__form__block').removeClass('shake');
 });
+
+
+//wow
+new WOW().init({
+  live: true,
+});
