@@ -213,9 +213,3 @@ $('.intro__form__block__input input').bind('keypress', function (event) {
 new WOW().init({
   live: true,
 });
-
-
-//load
-const el = document.querySelector('img');
-const observer = lozad(el); // passing a `NodeList` (e.g. `document.querySelectorAll()`) is also valid
-observer.observe();
