@@ -8,6 +8,7 @@
     +r(767)
       height: auto
       padding-bottom: 40px
+      overflow: hidden
     // &__img
     //   display: flex
     //   justify-content: flex-end
@@ -19,9 +20,12 @@
     //     max-width: 100%
     &__swiper
       overflow: hidden
+      +r(767)
+        overflow: visible
+        margin-top: 50px
       .swiper-mobile_tour
-        width: 240px
-        padding-bottom: 70px
+        width: 238px
+        padding-bottom: 50px
         overflow: visible
         img
           width: 100%
