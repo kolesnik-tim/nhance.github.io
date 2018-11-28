@@ -1,6 +1,5 @@
 // import '../lib/selectize.min.js';
 import modal from 'jquery-modal';
-import lozad from 'lozad'
 
 //pop-up
 $('[rel="modal:open"]').on('click', function(event) {
