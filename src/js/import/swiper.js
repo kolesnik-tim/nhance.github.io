@@ -22,21 +22,17 @@ var galleryTop = new Swiper('.gallery-top', {
   },
 });
 
+
+
+
+//mobile-tour
 var swiper = new Swiper('.swiper-mobile_tour', {
-  effect: 'coverflow',
-  grabCursor: true,
-  loop: true,
-  centeredSlides: true,
-  slidesPerView: 'auto',
-  coverflowEffect: {
-    rotate: 0,
-    stretch: -28,
-    depth: 300,
-    modifier: 1,
-    slideShadows : true,
-  },
+  slidesPerView: 1,
+  spaceBetween: 10,
+  speed: 700,
   pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
+    el: '.swiper-pagination-mobile_tour',
+    type: 'fraction',
   },
 });
+$('.swiper-pagination-fraction').append('<span class="text">of</span>')

@@ -9,8 +9,10 @@ block content
       .container
         .row.middle-xs
           .col-sm-6.col-xs-12.last-xs
-            .mobile_tour__intro__swiper
+            .mobile_tour__intro__img
+              img(src='img/mobile_tour/pwa@3x.png')
               .swiper-container.swiper-mobile_tour
+                .swiper-pagination.swiper-pagination-mobile_tour
                 .swiper-wrapper
                   .swiper-slide
                     img(src='img/mobile_tour/key-feature-01.png')
@@ -24,7 +26,6 @@ block content
                     img(src='img/mobile_tour/key-feature-01.png')
                   .swiper-slide
                     img(src='img/mobile_tour/key-feature-01.png')
-                .swiper-pagination
           .col-sm-5.col-sm-offset-1.col-xs-12.last-sm.wow.fadeInUp(data-wow-duration='1s')
             h1 Digital Experience Card
             p A mobile friendly, interactive, personalized digital card, which binds all post purchase interactions and transforms the way in which your customers interact, engage and transact with you.
