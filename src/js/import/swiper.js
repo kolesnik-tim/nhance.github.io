@@ -32,7 +32,14 @@ var swiper = new Swiper('.swiper-mobile_tour', {
   speed: 700,
   pagination: {
     el: '.swiper-pagination-mobile_tour',
-    type: 'fraction',
+    clickable : true,
   },
 });
-$('.swiper-pagination-fraction').append('<span class="text">of</span>')
+  //all
+    let slideNumber = $('.swiper-mobile_tour .swiper-slide').length
+    $('.swiper-progress .all').text(slideNumber)
+  //active
+    swiper.on('transitionEnd', function () {
+      let indexItem = $('.swiper-mobile_tour .swiper-slide-active').index();
+      $('.swiper-progress .active').text(++indexItem)
+    });
