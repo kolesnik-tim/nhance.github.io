@@ -30,8 +30,8 @@ var swiper = new Swiper('.swiper-mobile_tour', {
   slidesPerView: 1,
   spaceBetween: 49,
   effect: 'coverflow',
-  grabCursor: true,
-  centeredSlides: true,
+  loopFillGroupWithBlank: true,
+  loop: true,
   coverflowEffect: {
     rotate: 0,
     stretch: 18,
@@ -45,6 +45,7 @@ var swiper = new Swiper('.swiper-mobile_tour', {
   },
   autoplay: {
     delay: 3000,
+    disableOnInteraction: false
   },
   breakpoints: {
     500: {
@@ -56,10 +57,16 @@ var swiper = new Swiper('.swiper-mobile_tour', {
   }
 });
   //all
-    let slideNumber = $('.swiper-mobile_tour .swiper-slide').length
+    let slideNumber = $('.swiper-pagination-mobile_tour span').length
     $('.swiper-progress .all').text(slideNumber)
   //active
     swiper.on('transitionEnd', function () {
-      let indexItem = $('.swiper-mobile_tour .swiper-slide-active').index();
-      $('.swiper-progress .active').text(++indexItem)
+      $('.swiper-progress .active').text(++swiper.realIndex)
+    });
+    swiper.on('transitionEnd', function () {
+      if(swiper.activeIndex === 8){
+        swiper.slideToLoop(0 , 500 , true);
+      } else if(swiper.activeIndex === 0){
+        swiper.slideToLoop(6, 500 , true);
+      }
     });
