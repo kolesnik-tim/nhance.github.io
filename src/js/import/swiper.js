@@ -34,6 +34,9 @@ var swiper = new Swiper('.swiper-mobile_tour', {
     el: '.swiper-pagination-mobile_tour',
     clickable : true,
   },
+  autoplay: {
+    delay: 4000,
+  },
 });
   //all
     let slideNumber = $('.swiper-mobile_tour .swiper-slide').length
