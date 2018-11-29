@@ -28,14 +28,14 @@ var galleryTop = new Swiper('.gallery-top', {
 //mobile-tour
 var swiper = new Swiper('.swiper-mobile_tour', {
   slidesPerView: 1,
-  spaceBetween: 40,
+  spaceBetween: 49,
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
   coverflowEffect: {
     rotate: 0,
     stretch: 18,
-    depth: -30,
+    depth: 20,
     modifier: 1,
     slideShadows : false,
   },
@@ -47,12 +47,6 @@ var swiper = new Swiper('.swiper-mobile_tour', {
     delay: 4000,
   },
   breakpoints: {
-    1040: {
-      coverflowEffect: {
-        stretch: 18,
-        depth: -80,
-      },
-    },
     500: {
       coverflowEffect: {
         stretch: 18,
