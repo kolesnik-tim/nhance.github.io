@@ -28,8 +28,17 @@ var galleryTop = new Swiper('.gallery-top', {
 //mobile-tour
 var swiper = new Swiper('.swiper-mobile_tour', {
   slidesPerView: 1,
-  spaceBetween: 10,
-  speed: 700,
+  spaceBetween: 40,
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 18,
+    depth: -30,
+    modifier: 1,
+    slideShadows : false,
+  },
   pagination: {
     el: '.swiper-pagination-mobile_tour',
     clickable : true,
