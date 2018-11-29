@@ -44,7 +44,7 @@ var swiper = new Swiper('.swiper-mobile_tour', {
     clickable : true,
   },
   autoplay: {
-    delay: 4000,
+    delay: 3000,
   },
   breakpoints: {
     500: {
