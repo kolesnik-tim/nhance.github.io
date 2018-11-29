@@ -27,7 +27,7 @@ var galleryTop = new Swiper('.gallery-top', {
 
 //mobile-tour
 var swiper = new Swiper('.swiper-mobile_tour', {
-  slidesPerView: 1,
+  slidesPerView: 'auto',
   spaceBetween: 49,
   effect: 'coverflow',
   loopFillGroupWithBlank: true,
@@ -62,11 +62,4 @@ var swiper = new Swiper('.swiper-mobile_tour', {
   //active
     swiper.on('transitionEnd', function () {
       $('.swiper-progress .active').text(++swiper.realIndex)
-    });
-    swiper.on('transitionEnd', function () {
-      if(swiper.activeIndex === 8){
-        swiper.slideToLoop(0 , 500 , true);
-      } else if(swiper.activeIndex === 0){
-        swiper.slideToLoop(6, 500 , true);
-      }
     });
