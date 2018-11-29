@@ -8,6 +8,7 @@
     +r(767)
       height: auto
       padding-bottom: 40px
+      overflow: hidden
     .swiper-pagination-mobile_tour
       left: 50%
       top: auto
@@ -17,6 +18,8 @@
       position: relative
       justify-content: space-between
       transform: translate(-50%, 0)
+      +r(767)
+        margin-bottom: 40px
       .swiper-pagination-bullet
         width: 10px
         height: 10px
@@ -27,16 +30,20 @@
         opacity: 1
     &__img
       display: flex
-      justify-content: flex-end
+      justify-content: center
       align-items: center
       position: relative
       overflow: hidden
       +r(767)
         justify-content: center
         margin-top: 40px
-        margin-bottom: 50px
-      img
+        overflow: visible
+      img.bg
+        width: 60%
+        margin-left: 8px
         max-width: 100%
+        +r(500)
+          width: 300px
       .swiper-mobile_tour
         position: absolute
         background: rgb(224, 224, 224)
@@ -47,6 +54,8 @@
         height: 81%
         overflow: visible
         padding: 30px 20px 0
+        +r(500)
+          width: 180px
         .swiper-slide
           top: -14px
           img

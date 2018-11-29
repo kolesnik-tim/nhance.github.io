@@ -46,6 +46,20 @@ var swiper = new Swiper('.swiper-mobile_tour', {
   autoplay: {
     delay: 4000,
   },
+  breakpoints: {
+    1040: {
+      coverflowEffect: {
+        stretch: 18,
+        depth: -80,
+      },
+    },
+    500: {
+      coverflowEffect: {
+        stretch: 18,
+        depth: -90,
+      },
+    }
+  }
 });
   //all
     let slideNumber = $('.swiper-mobile_tour .swiper-slide').length
