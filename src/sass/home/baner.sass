@@ -1,0 +1,188 @@
+.baner
+  height: 795px
+  background-color: $white
+  +center
+  +r(767)
+    height: auto
+    padding-bottom: 50px
+  &__img
+    display: flex
+    justify-content: center
+  &__text
+    +r(767)
+      padding: 40px 0
+    h2
+      font-size: 40px
+      font-weight: 300
+      line-height: 1.15
+      color: $dark-two
+      padding-bottom: 50px
+      position: relative
+      +r(767)
+        text-align: center
+      &:before
+        content: ''
+        position: absolute
+        bottom: 30px
+        width: 15px
+        height: 4.5px
+        border-radius: 2px
+        background-color: $dark-two
+        +r(767)
+          left: 50%
+          transform: translate(-50%)
+      span
+        font-size: 50px
+        font-weight: 300
+        color: $pink-red
+        display: block
+    p
+      font-size: 14px
+      line-height: 1.61
+      color: $dark-two
+      margin-bottom: 30px
+      +r(767)
+        text-align: center
+    &__btn
+      +center-y
+      +r(767)
+        justify-content: center
+      a
+        display: flex
+        align-items: center
+        font-size: 14px
+        font-weight: 600
+        line-height: 1
+        color: $dark-two
+        margin-right: 30px
+        &:hover
+          text-decoration: underline
+        img
+          margin-right: 15px
+        i
+          color: $pink-red
+          font-size: 10px
+          margin-left: 10px
+  &__form
+    max-width: 457px
+    width: 100%
+    margin-top: 75px
+    +r(767)
+      margin-bottom: 60px
+      position: relative
+      left: 50%
+      transform: translate(-50%)
+    &__result
+      display: none
+      +r(767)
+        margin-bottom: 50px
+      &__block
+        display: flex
+        align-items: center
+        margin-top: 75px
+        p
+          font-size: 14px
+          font-weight: 600
+          line-height: 1.43
+          color: #31cd64
+          margin-left: 10px
+    b
+      font-size: 14px
+      font-weight: 600
+      margin-bottom: 20px
+      color: $dark-two
+      display: block
+      +r(767)
+        text-align: center
+    span
+      font-size: 12px
+      color: rgba(19, 28, 46, 0.6)
+      display: block
+      margin-top: 10px
+      +r(767)
+        text-align: center
+    &__block
+      display: flex
+      border-radius: 10px
+      background-color: $white
+      border: 1px solid $pinkish-grey
+      &.error
+        border-color: #fd3e39 !important
+      .select-tn
+        position: relative
+        display: inline-block
+        margin-right: 15px
+        +r(767)
+          margin-right: 7px
+        select
+          display: none
+        img
+          width: 15px
+          height: 15px
+          margin-left: 20px
+          +r(767)
+            margin-left: 10px
+        p
+          padding-left: 10px
+          font-size: 14px
+          color: $dark-two
+        li
+          padding: 10px
+          display: flex
+          &.active
+            background: #eee
+        &__result
+          display: flex
+          width: 100px
+          padding: 19px 0
+          position: relative
+          +r(767)
+            width: 88px
+          &:before
+            content: ''
+            position: absolute
+            right: 4px
+            top: 25px
+            border: 8px solid transparent
+            border-top: 8px solid #bdbdbd
+            +tr
+          &.active
+            &:before
+              transform: rotate(180deg)
+              top: 20px
+        &__dorpdown
+          position: absolute
+          top: 100%
+          z-index: 9
+          width: 100%
+          overflow: hidden
+          display: none
+          background: $white
+          border: 1px solid #bdbdbd
+          img
+            margin-left: 0
+      &__input
+        width: 100%
+        input
+          height: 100%
+          font-size: 14px
+          color: $dark-two
+          +placeholder-color($dark-two)
+          padding: 15px 0
+          width: 100%
+      &__submit
+        width: 100px
+        border-left: 1px solid $pinkish-grey
+        +r(767)
+          width: 80px
+        input
+          font-size: 12px
+          font-weight: bold
+          color: $dark-two
+          text-transform: uppercase
+          padding: 19px 24px
+          background-color: $white-three
+          border-top-right-radius: 10px
+          border-bottom-right-radius: 10px
+          +r(767)
+            padding: 19px 15px
