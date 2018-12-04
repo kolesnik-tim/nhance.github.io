@@ -1,4 +1,4 @@
-import './import/header';
+import './import/header.js';
 import './import/ui';
 import './import/parallax';
 import './import/swiper';
