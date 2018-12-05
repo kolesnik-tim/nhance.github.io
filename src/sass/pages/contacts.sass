@@ -31,11 +31,17 @@
     &__info
       margin-bottom: 15px
       flex: 1
+      +r(767)
+        +center-column
     li
       display: flex
       margin-bottom: 25px
       &:last-child
         align-items: center
+      +r(767)
+        flex-direction: column
+        justify-content: center
+        margin-bottom: 40px
       strong
         display: block
         max-width: 140px
@@ -49,8 +55,9 @@
         text-transform: uppercase
         +r(767)
           max-width: 100%
-          width: 110px
-          margin-right: 15px
+          margin-right: 0
+          text-align: center
+          margin-bottom: 20px
       b
         font-size: 14px
         font-weight: 600
@@ -69,9 +76,24 @@
         max-width: 240px
         width: 100%
         flex: 1
+      p
+        +r(767)
+          max-width: 100%
+          text-align: center
       a
-        display: block
+        display: flex
+        align-items: center
         line-height: 1.7
+        margin-bottom: 12px
+        +r(767)
+          max-width: 100%
+          text-align: center
+          justify-content: center
+        &:hover
+          text-decoration: underline
+        img
+          width: 15px
+          margin-right: 15px
       .btn
         font-weight: bold
         max-width: 100%
