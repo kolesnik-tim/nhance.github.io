@@ -99,6 +99,9 @@
         .about__culture__block
           transform: scale(0.95)
           opacity: 0.4
+          +r(1040)
+            opacity: 1 !important
+            transform: none !important
     h2
       font-size: 40px
       font-weight: 300
@@ -117,6 +120,8 @@
       position: relative
       +r(1040)
         min-height: 400px
+        &:hover
+          transform: none !important
       &-1
         transform-origin: top left
       &-2, &-3,
