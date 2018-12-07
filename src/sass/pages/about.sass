@@ -90,6 +90,59 @@
       left: 50%
       transform: translate(-50%)
       margin-top: 50px
+  &__culture
+    padding: 110px 0 150px
+    .row
+      &:hover
+        .about__culture__block
+          transform: scale(0.95)
+          opacity: 0.4
+    h2
+      font-size: 40px
+      font-weight: 300
+      text-align: center
+      color: $dark-two
+      margin-bottom: 120px
+      +r(767)
+        font-size: 30px
+    &__block
+      padding: 55px 35px
+      min-height: 320px
+      +cover
+      border-radius: 10px
+      margin-bottom: 15px
+      transition: transform 1s ease
+      position: relative
+      +r(1040)
+        min-height: 400px
+      &-1
+        transform-origin: top left
+      &-2, &-3,
+        transform-origin: top
+      &-4
+        transform-origin: top right
+      &-5
+        transform-origin: bottom left
+      &-6, &-7
+        transform-origin: bottom
+      &-8
+        transform-origin: bottom right
+      &:hover
+        transform: scale(1.3) !important
+        opacity: 1 !important
+        z-index: 9
+      h3
+        font-size: 20px
+        font-weight: bold
+        text-align: center
+        color: $white
+        margin-bottom: 15px
+        text-transform: uppercase
+      p
+        font-size: 14px
+        line-height: 1.43
+        text-align: center
+        color: $white
   &__worth
     padding: 115px 0
     background-color: $dark-two
