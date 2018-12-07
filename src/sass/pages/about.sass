@@ -28,7 +28,7 @@
         br
           display: none
   &__started
-    padding: 100px 0 140px
+    padding: 100px 0 130px
     +r(767)
       padding: 50px 0
     h2
@@ -50,16 +50,36 @@
         font-size: 14px
         margin-top: 10px
     strong
-      font-size: 25px
-      font-weight: normal
-      line-height: 1.4
+      font-size: 16px
+      font-weight: 600
+      text-transform: uppercase
+      line-height: 1.56
       text-align: center
+      max-width: 772px
+      position: relative
+      left: 50%
+      transform: translate(-50%)
       color: $dark-two
       display: block
-      margin-top: 105px
+      margin-top: 70px
+      border-radius: 10px
+      box-shadow: 0px 1px 3.5px 0 rgba(0, 0, 0, 0.16)
+      border: 1px solid $white-five
+      padding: 30px 40px 40px
+      &:after
+        content: ''
+        width: 21px
+        height: 4px
+        border-radius: 2px
+        background-color: $pink-red
+        display: block
+        position: absolute
+        left: 50%
+        transform: translate(-50%)
+        bottom: 20px
       +r(767)
-        font-size: 18px
         margin-top: 50px
+        padding: 30px 10px
   &__customers
     background-color: $white-four
     padding: 110px 0
