@@ -297,4 +297,4 @@ if($('.app-function-scroll').length) {
   .setTween(tweenAppfunction5)
   // .addIndicators()
   .addTo(appfunction5);
-}
+};

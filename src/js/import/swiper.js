@@ -57,11 +57,11 @@ var swiper = new Swiper('.swiper-mobile_tour', {
   }
 });
   //all
-    let slideNumber = $('.swiper-pagination-mobile_tour span').length
-    $('.swiper-progress .all').text(slideNumber)
+    let slideNumber = $('.swiper-pagination-mobile_tour span').length;
+    $('.swiper-progress .all').text(slideNumber);
   //active
     swiper.on('transitionEnd', function () {
-      $('.swiper-progress .active').text(++swiper.realIndex)
+      $('.swiper-progress .active').text(++swiper.realIndex);
     });
 
 swiper.update();
