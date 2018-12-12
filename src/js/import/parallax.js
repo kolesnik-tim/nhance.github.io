@@ -4,9 +4,9 @@
 // import {TweenMax} from "gsap";
 import skrollr from '../lib/skrollr.js';
 
-
-var s = skrollr.init();
-
+$(document).ready(function(){
+  var s = skrollr.init();
+});
 
 
 
