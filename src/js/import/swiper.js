@@ -63,5 +63,6 @@ var swiper = new Swiper('.swiper-mobile_tour', {
     swiper.on('transitionEnd', function () {
       $('.swiper-progress .active').text(++swiper.realIndex);
     });
-
-swiper.update();
+if($('.swiper-mobile_tour').length) {
+  swiper.update();
+}
