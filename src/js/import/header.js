@@ -9,9 +9,11 @@ mywindow.scroll(function () {
     newscroll = mywindow.scrollTop();
     if (newscroll > mypos && !up) {
         $('.header').stop().removeClass('scroll');
+        $('.slider__header').css({'top': 0})
         up = !up;
     } else if(newscroll < mypos && up) {
         $('.header').stop().addClass('scroll');
+        $('.slider__header').css({'top': $('.header').innerHeight()})
         up = !up;
     }
     mypos = newscroll;
