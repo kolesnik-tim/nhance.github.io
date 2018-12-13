@@ -17,10 +17,10 @@ $('.advantages__pos').css({'height': heightAd});
 $('.slider__img').css({'top': $(window).height() / 2 - $('.slider__img').innerHeight() / 2})
 $('.slider__content__pagination').css({'top': $(window).height() / 2 - $('.slider__content__pagination').innerHeight() / 2})
 $(window).scroll(function(){
-  if($(".advantages__pos").offset().top + $(".advantages__pos").innerHeight() <= $(window).scrollTop() + $(window).height()){
-    $(".advantages").addClass('active');
+  if($(".advantages__pos").offset().top + $(".advantages__pos").innerHeight() < $(window).scrollTop() + $(window).height()){
+    $(".advantages").css({'position': 'fixed'});
   } else if($(window).scrollTop() + $(window).height() < $(".slider").offset().top){
-    $(".advantages").removeClass('active');
+    $(".advantages").css({'position': 'relative'});
   }
 });
 //pagination
