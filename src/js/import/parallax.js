@@ -11,45 +11,53 @@ $(document).ready(function(){
 });
 
 
-// //slider
-// let heightAd = $(".advantages").innerHeight();
-// $('.advantages__pos').css({'height': heightAd});
-// $('.slider__img').css({'top': $(window).height() / 2 - $('.slider__img').innerHeight() / 2})
-// $('.slider__content__pagination').css({'top': $(window).height() / 2 - $('.slider__content__pagination').innerHeight() / 2})
-// $(window).scroll(function(){
-//   if($(".advantages__pos").offset().top + $(".advantages__pos").innerHeight() < $(window).scrollTop() + $(window).height()){
-//     $(".advantages").css({'position': 'fixed'});
-//   } else if($(window).scrollTop() + $(window).height() < $(".slider").offset().top){
-//     $(".advantages").css({'position': 'relative'});
-//   }
-// });
-// //pagination
-// if($('.slider__content__pagination').length) {
-// let heightWindow = $(window).height() / 2;
-// let slide1 = $('.slider__slide-1').offset().top;
-// let slide2 = $('.slider__slide-2').offset().top - heightWindow;
-// let slide3 = $('.slider__slide-3').offset().top - heightWindow;
-// let scrollWindow;
-// $(window).on('scroll', function() {
-//   scrollWindow = $(this).scrollTop();
-//   if (scrollWindow >= slide1 && scrollWindow < slide2) {
-//     $('.slider__slide').removeClass('active')
-//     $('.slider__slide-1').addClass('active')
-//     $('.slider__content__pagination span').removeClass('active')
-//     $('.slider__content__pagination .circle-1').addClass('active')
-//   } else if(scrollWindow >= slide2 && scrollWindow < slide3) {
-//     $('.slider__slide').removeClass('active')
-//     $('.slider__slide-2').addClass('active')
-//     $('.slider__content__pagination span').removeClass('active')
-//     $('.slider__content__pagination .circle-2').addClass('active')
-//   }else if(scrollWindow >= slide3) {
-//     $('.slider__slide').removeClass('active')
-//     $('.slider__slide-3').addClass('active')
-//     $('.slider__content__pagination span').removeClass('active')
-//     $('.slider__content__pagination .circle-3').addClass('active')
-//   }
-// });
-// }
+//slider header
+let heightAd = $(".advantages").innerHeight();
+let pagination = $('.slider__content__pagination');
+let sliderImg = $('.slider__img');
+let windHeight = $(window).height();
+$('.advantages__pos').css({'height': heightAd});
+sliderImg.css({'top': windHeight / 2 - sliderImg.innerHeight() / 2})
+pagination.css({'top': windHeight / 2 - pagination.innerHeight() / 2})
+//pagination
+if(pagination.length) {
+  let heightWindow = windHeight / 2;
+  let slide1 = $('.slider__slide-1').offset().top;
+  let slide2 = $('.slider__slide-2').offset().top - heightWindow;
+  let slide3 = $('.slider__slide-3').offset().top - heightWindow;
+  let scrollWindow;
+  $(window).on('scroll', function() {
+    scrollWindow = $(this).scrollTop();
+    if($(".advantages__pos").offset().top + $(".advantages__pos").innerHeight() < scrollWindow + windHeight){
+      $(".advantages").css({'position': 'fixed'});
+    } else if(scrollWindow + windHeight < $(".slider").offset().top){
+      $(".advantages").css({'position': 'absolute'});
+    }
+    if (scrollWindow >= slide1 && scrollWindow < slide2) {
+      $('.slider__slide').removeClass('active')
+      $('.slider__slide-1').addClass('active')
+      $('.slider__content__pagination span').removeClass('active')
+      $('.slider__content__pagination .circle-1').addClass('active')
+    } else if(scrollWindow >= slide2 && scrollWindow < slide3) {
+      $('.slider__slide').removeClass('active')
+      $('.slider__slide-2').addClass('active')
+      $('.slider__content__pagination span').removeClass('active')
+      $('.slider__content__pagination .circle-2').addClass('active')
+    }else if(scrollWindow >= slide3) {
+      $('.slider__slide').removeClass('active')
+      $('.slider__slide-3').addClass('active')
+      $('.slider__content__pagination span').removeClass('active')
+      $('.slider__content__pagination .circle-3').addClass('active')
+    }
+    // if (scrollWindow > $(".slider").offset().top && scrollWindow + heightWindow + 200 < $(".slider").offset().top + $(".slider").innerHeight()){
+    //   sliderImg.addClass('fixed');
+    //   pagination.addClass('fixed');
+    // } else{
+    //   sliderImg.removeClass('fixed');
+    //   pagination.removeClass('fixed');
+    // }
+  });
+}
 
 
 

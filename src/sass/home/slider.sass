@@ -6,13 +6,22 @@
     top: 0
     z-index: 6
     width: 100%
+    height: 100px
     background: $white
     transition: all .5s linear 0s
+    .container, .row
+      height: 100%
     &__block
       border: 1px solid #000
+      height: 100%
+      +center
+      img
+        height: 60px
   &__content
     padding-top: 150px
     position: relative
+    +r(767)
+      padding-top: 0
     &__pagination
       position: sticky
       padding-left: 20px
@@ -37,7 +46,19 @@
   &__slide
     margin-top: -200px
     height: 100vh
+    padding-left: 50px
+    +r(767)
+      padding-left: 0
+      height: auto
+      margin-top: 0
+    &__img
+      height: 100px
+      +center
+      img
+        height: 100%
     &:last-child
       height: auto
     h2
       padding: 100px 0
+      +r(767)
+        text-align: center
