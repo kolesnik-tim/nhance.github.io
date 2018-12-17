@@ -8,6 +8,8 @@
   z-index: -1
   &__pos
     position: relative
+    +r(1040)
+      display: none
   &__purchases
     position: relative
     width: 100%
@@ -100,7 +102,7 @@
   &__content
     padding-top: 150px
     position: relative
-    +r(767)
+    +r(1040)
       padding-top: 0
     &__pagination
       position: sticky
@@ -131,7 +133,7 @@
   &__slide
     margin-top: -200px
     height: 100vh
-    +r(767)
+    +r(1040)
       padding-left: 0
       height: auto
       margin-top: 0
@@ -145,5 +147,6 @@
     h2
       padding: 100px 0
       padding-left: 50px
-      +r(767)
+      +r(1040)
         text-align: center
+        padding-left: 0
