@@ -3,13 +3,11 @@
 // import 'debug.addIndicators';
 // import {TweenMax} from "gsap";
 import skrollr from '../lib/skrollr.js';
-if($(window).width() > 1040){
-  $(document).ready(function(){
-    var s = skrollr.init({
-      smoothScrolling: true,
-    });
+$(document).ready(function(){
+  var s = skrollr.init({
+    smoothScrolling: true,
   });
-}
+});
 
 
 
@@ -18,10 +16,8 @@ if($(window).width() > 1040){
 //slider
 let heightAd = $(".animation").innerHeight();
 let pagination = $('.slider__content__pagination');
-let sliderImg = $('.slider__img');
 let windHeight = $(window).height();
 $('.animation__pos').css({'height': heightAd});
-sliderImg.css({'top': windHeight / 2 - sliderImg.innerHeight() / 2 + 100})
 pagination.css({'top': windHeight / 2 - pagination.innerHeight() / 2 + 100})
 //header-button
 $('.slider__header__block').on('click', function(event){
@@ -42,9 +38,9 @@ if(pagination.length) {
   $(window).on('scroll', function() {
     scrollWindow = $(this).scrollTop();
     //fixed animation
-    if($(".animation__pos").offset().top + $(".animation__pos").innerHeight() < scrollWindow + windHeight){
+    if(scrollWindow + windHeight > $(".animation__pos").offset().top + $(".animation__pos").innerHeight() && scrollWindow <= $('.slider').offset().top){
       $(".animation").css({'position': 'fixed'});
-    } else if(scrollWindow + windHeight < $(".slider").offset().top){
+    } else{
       $(".animation").css({'position': 'absolute'});
     }
     //pagination
