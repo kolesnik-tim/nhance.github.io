@@ -1,3 +1,58 @@
+.animation
+  background: $white
+  padding: 130px 0 0px
+  position: absolute
+  width: 100%
+  left: 0
+  bottom: 0
+  z-index: -1
+  &__pos
+    position: relative
+  &__purchases
+    position: relative
+    width: 100%
+    img
+      position: absolute
+      left: 37%
+      top: 50%
+      margin-left: 40px
+  &__phone
+    width: 290px
+    height: 630px
+    overflow: hidden
+    position: relative
+    left: 50%
+    transform: translate(-50%)
+    +center
+    margin-top: 100px
+    &:before
+      content: ''
+      width: 100%
+      background: $white
+      height: 10px
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 19
+    img.phone
+      width: 100%
+      position: absolute
+      top: 0
+      left: 0
+      z-index: 20
+    &-img
+      margin: 0 20px
+      width: calc(100% - 40px)
+      left: 0
+      top: 15px
+      position: absolute
+      &:nth-child(2)
+        top: 10px
+  
+  
+  
+  
+  
 .slider
   position: relative
   background: $white
@@ -9,14 +64,39 @@
     height: 100px
     background: $white
     transition: all .5s linear 0s
-    .container, .row
+    border-bottom: 1px solid #e3e3e3
+    border-top: 1px solid #e3e3e3
+    .container
       height: 100%
+    &__content
+      display: flex
+      justify-content: space-around
+      width: 800px
+      align-items: center
+      height: 100%
+      position: relative
+      left: 50%
+      transform: translate(-50%)
     &__block
-      border: 1px solid #000
       height: 100%
+      width: 100%
       +center
+      border-left: 1px solid #e3e3e3
+      cursor: pointer
+      &:last-child
+        border-right: 1px solid #e3e3e3
+      &.active
+        background: #f9f9f9 !important
+        img
+          opacity: 1 !important
+      &:hover
+        background: #fcfcfc
+        img
+          opacity: 0.6
       img
         height: 60px
+        opacity: 0.3
+        +tr
   &__content
     padding-top: 150px
     position: relative

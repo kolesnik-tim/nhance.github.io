@@ -3,23 +3,36 @@
 // import 'debug.addIndicators';
 // import {TweenMax} from "gsap";
 import skrollr from '../lib/skrollr.js';
-
-$(document).ready(function(){
-  var s = skrollr.init({
-    smoothScrolling: true,
+if($(window).width() > 1040){
+  $(document).ready(function(){
+    var s = skrollr.init({
+      smoothScrolling: true,
+    });
   });
-});
+}
 
 
-//slider header
-let heightAd = $(".advantages").innerHeight();
+
+
+
+//slider
+let heightAd = $(".animation").innerHeight();
 let pagination = $('.slider__content__pagination');
 let sliderImg = $('.slider__img');
 let windHeight = $(window).height();
-$('.advantages__pos').css({'height': heightAd});
-sliderImg.css({'top': windHeight / 2 - sliderImg.innerHeight() / 2})
-pagination.css({'top': windHeight / 2 - pagination.innerHeight() / 2})
-//pagination
+$('.animation__pos').css({'height': heightAd});
+sliderImg.css({'top': windHeight / 2 - sliderImg.innerHeight() / 2 + 100})
+pagination.css({'top': windHeight / 2 - pagination.innerHeight() / 2 + 100})
+//header-button
+$('.slider__header__block').on('click', function(event){
+  $('.slider__header__block').removeClass('active');
+  $(this).addClass('active');
+  let img = $(this).attr('rel');
+  $('.slider__img img').attr('src', img);
+});
+
+
+
 if(pagination.length) {
   let heightWindow = windHeight / 2;
   let slide1 = $('.slider__slide-1').offset().top;
@@ -28,11 +41,13 @@ if(pagination.length) {
   let scrollWindow;
   $(window).on('scroll', function() {
     scrollWindow = $(this).scrollTop();
-    if($(".advantages__pos").offset().top + $(".advantages__pos").innerHeight() < scrollWindow + windHeight){
-      $(".advantages").css({'position': 'fixed'});
+    //fixed animation
+    if($(".animation__pos").offset().top + $(".animation__pos").innerHeight() < scrollWindow + windHeight){
+      $(".animation").css({'position': 'fixed'});
     } else if(scrollWindow + windHeight < $(".slider").offset().top){
-      $(".advantages").css({'position': 'absolute'});
+      $(".animation").css({'position': 'absolute'});
     }
+    //pagination
     if (scrollWindow >= slide1 && scrollWindow < slide2) {
       $('.slider__slide').removeClass('active')
       $('.slider__slide-1').addClass('active')
@@ -49,13 +64,6 @@ if(pagination.length) {
       $('.slider__content__pagination span').removeClass('active')
       $('.slider__content__pagination .circle-3').addClass('active')
     }
-    // if (scrollWindow > $(".slider").offset().top && scrollWindow + heightWindow + 200 < $(".slider").offset().top + $(".slider").innerHeight()){
-    //   sliderImg.addClass('fixed');
-    //   pagination.addClass('fixed');
-    // } else{
-    //   sliderImg.removeClass('fixed');
-    //   pagination.removeClass('fixed');
-    // }
   });
 }
 
