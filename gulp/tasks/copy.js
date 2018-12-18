@@ -28,17 +28,17 @@ gulp.task('copy:rootfiles', function () {
 gulp.task('copy:img', function () {
     return gulp
         .src([
-            config.src.img + '/**/*.{jpg,png,jpeg,svg,gif,ico}',
+            config.src.img + '/**/*.*',
             '!' + config.src.img + '/svgo/**/*.*'
         ])
         .pipe(gulp.dest(config.dest.img));
 });
 
-// gulp.task('copy:wow', function () {
-//     return gulp
-//         .src(config.src.js + '/*.*')
-//         .pipe(gulp.dest(config.dest.js));
-// });
+gulp.task('copy:wow', function () {
+    return gulp
+        .src(config.src.js + '/lib/wow.min.js')
+        .pipe(gulp.dest(config.dest.js));
+});
 
 
 
@@ -46,9 +46,9 @@ gulp.task('copy', [
     'copy:img',
     // 'copy:rootfiles',
     // 'copy:lib',
-    // 'copy:data',
+    // 'copy:favicon',
     'copy:fonts',
-    // 'copy:wow'
+    'copy:wow'
 ]);
 gulp.task('copy:watch', function () {
     gulp.watch(config.src.img + '/*', ['copy']);
