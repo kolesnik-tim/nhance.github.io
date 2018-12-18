@@ -6,7 +6,7 @@ while (divs.length) {
 };
 
 //random mobile_tour
-var parent1 = $(".swiper-mobile_tour .swiper-wrapper");
+var parent1 = $(".swiper-mobile_tour .swiper-wrapper, .swiper-animated .swiper-wrapper");
 var divs1 = parent1.children();
 while (divs1.length) {
     parent1.append(divs1.splice(Math.floor(Math.random() * divs1.length), 1)[0]);

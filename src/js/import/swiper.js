@@ -66,3 +66,17 @@ var swiper = new Swiper('.swiper-mobile_tour', {
 if($('.swiper-mobile_tour').length) {
   swiper.update();
 }
+
+
+var swiper2 = new Swiper('.swiper-animated', {
+  slidesPerView: 'auto',
+  spaceBetween: 1,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false
+  }
+});
+if($('.swiper-animated').length) {
+  swiper2.update();
+}

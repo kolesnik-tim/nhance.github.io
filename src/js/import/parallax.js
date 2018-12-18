@@ -13,55 +13,54 @@ $(document).ready(function(){
 
 
 
-//slider
-let heightAd = $(".animation").innerHeight();
-let pagination = $('.slider__content__pagination');
-let windHeight = $(window).height();
-$('.animation__pos').css({'height': heightAd});
-pagination.css({'top': windHeight / 2 - pagination.innerHeight() / 2 + 100})
-//header-button
-$('.slider__header__block').on('click', function(event){
-  $('.slider__header__block').removeClass('active');
-  $(this).addClass('active');
-  let img = $(this).attr('rel');
-  $('.slider__img img').attr('src', img);
-});
+// //slider
+// let heightAd = $(".animation").innerHeight();
+// let animated = $('.animation');
+// let windHeight = $(window).height();
+// $('.animation__pos').css({'height': heightAd});
+// //header-button
+// $('.slider__header__block').on('click', function(event){
+//   $('.slider__header__block').removeClass('active');
+//   $(this).addClass('active');
+//   let img = $(this).attr('rel');
+//   $('.slider__img img').attr('src', img);
+// });
 
 
 
-if(pagination.length) {
-  let heightWindow = windHeight / 2;
-  let slide1 = $('.slider__slide-1').offset().top;
-  let slide2 = $('.slider__slide-2').offset().top - heightWindow;
-  let slide3 = $('.slider__slide-3').offset().top - heightWindow;
-  let scrollWindow;
-  $(window).on('scroll', function() {
-    scrollWindow = $(this).scrollTop();
-    //fixed animation
-    if(scrollWindow + windHeight > $(".animation__pos").offset().top + $(".animation__pos").innerHeight() && scrollWindow <= $('.slider').offset().top){
-      $(".animation").css({'position': 'fixed'});
-    } else{
-      $(".animation").css({'position': 'absolute'});
-    }
-    //pagination
-    if (scrollWindow >= slide1 && scrollWindow < slide2) {
-      $('.slider__slide').removeClass('active')
-      $('.slider__slide-1').addClass('active')
-      $('.slider__content__pagination span').removeClass('active')
-      $('.slider__content__pagination .circle-1').addClass('active')
-    } else if(scrollWindow >= slide2 && scrollWindow < slide3) {
-      $('.slider__slide').removeClass('active')
-      $('.slider__slide-2').addClass('active')
-      $('.slider__content__pagination span').removeClass('active')
-      $('.slider__content__pagination .circle-2').addClass('active')
-    }else if(scrollWindow >= slide3) {
-      $('.slider__slide').removeClass('active')
-      $('.slider__slide-3').addClass('active')
-      $('.slider__content__pagination span').removeClass('active')
-      $('.slider__content__pagination .circle-3').addClass('active')
-    }
-  });
-}
+// if(animated.length) {
+//   // let heightWindow = windHeight / 2;
+//   // let slide1 = $('.slider__slide-1').offset().top;
+//   // let slide2 = $('.slider__slide-2').offset().top - heightWindow;
+//   // let slide3 = $('.slider__slide-3').offset().top - heightWindow;
+//   let scrollWindow;
+//   $(window).on('scroll', function() {
+//     scrollWindow = $(this).scrollTop();
+//     //fixed animation
+//     if(scrollWindow + windHeight > $(".animation__pos").offset().top + $(".animation__pos").innerHeight() && scrollWindow <= $('.slider').offset().top){
+//       $(".animation").css({'position': 'fixed'});
+//     } else{
+//       $(".animation").css({'position': 'absolute'});
+//     }
+//     // //pagination
+    // if (scrollWindow >= slide1 && scrollWindow < slide2) {
+    //   $('.slider__slide').removeClass('active')
+    //   $('.slider__slide-1').addClass('active')
+    //   $('.slider__content__pagination span').removeClass('active')
+    //   $('.slider__content__pagination .circle-1').addClass('active')
+    // } else if(scrollWindow >= slide2 && scrollWindow < slide3) {
+    //   $('.slider__slide').removeClass('active')
+    //   $('.slider__slide-2').addClass('active')
+    //   $('.slider__content__pagination span').removeClass('active')
+    //   $('.slider__content__pagination .circle-2').addClass('active')
+    // }else if(scrollWindow >= slide3) {
+    //   $('.slider__slide').removeClass('active')
+    //   $('.slider__slide-3').addClass('active')
+    //   $('.slider__content__pagination span').removeClass('active')
+    //   $('.slider__content__pagination .circle-3').addClass('active')
+    // }
+//   });
+// }
 
 
 
