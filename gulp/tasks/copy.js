@@ -39,6 +39,11 @@ gulp.task('copy:wow', function () {
         .src(config.src.js + '/lib/wow.min.js')
         .pipe(gulp.dest(config.dest.js));
 });
+gulp.task('copy:header', function () {
+    return gulp
+        .src(config.src.js + '/lib/header.js')
+        .pipe(gulp.dest(config.dest.js));
+});
 
 
 
@@ -48,7 +53,8 @@ gulp.task('copy', [
     // 'copy:lib',
     // 'copy:favicon',
     'copy:fonts',
-    'copy:wow'
+    'copy:wow',
+    'copy:header'
 ]);
 gulp.task('copy:watch', function () {
     gulp.watch(config.src.img + '/*', ['copy']);
