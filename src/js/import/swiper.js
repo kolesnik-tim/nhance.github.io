@@ -28,7 +28,7 @@ var galleryTop = new Swiper('.gallery-top', {
 //mobile-tour
 var swiper = new Swiper('.swiper-mobile_tour', {
   slidesPerView: 'auto',
-  spaceBetween: 49,
+  spaceBetween: 46,
   effect: 'coverflow',
   loopFillGroupWithBlank: true,
   loop: true,
@@ -70,7 +70,7 @@ if($('.swiper-mobile_tour').length) {
 
 var swiper2 = new Swiper('.swiper-animated', {
   slidesPerView: 'auto',
-  spaceBetween: 10,
+  spaceBetween: 7,
   loop: true,
   autoplay: {
     delay: 3000,

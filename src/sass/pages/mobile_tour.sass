@@ -34,42 +34,43 @@
       align-items: center
       position: relative
       overflow: hidden
+      margin: 0 20px
       +r(767)
         justify-content: center
         margin-top: 40px
         overflow: visible
       img.bg
-        width: 60%
+        width: 38%
         margin-left: 8px
         max-width: 100%
         +r(500)
-          width: 300px
+          width: 250px
       .swiper-mobile_tour
         position: absolute
         background: rgb(224, 224, 224)
         top: 50%
-        left: 50%
+        left: calc(50% + 3px)
         transform: translate(-50%, -50%)
-        width: 37.5%
-        height: 81%
+        width: 33.2%
+        height: 75%
         overflow: visible
-        padding: 30px 20px 0
+        padding: 30px 7px 0
         +r(500)
-          width: 180px
+          width: 217px
         .swiper-slide
-          top: -14px
+          top: 15px
           +tr
           a
             display: block
             width: 100%
             height: 100%
           img
-            height: 100%
+            width: 100%
             +tr
           &:before
             content: ''
             width: 100%
-            height: 100%
+            height: 90%
             position: absolute
             left: 0
             top: 0
@@ -78,15 +79,16 @@
             visibility: visible
             z-index: 2
             +tr
+            +r(500)
+              height: 88.5%
         .swiper-slide-active
-          img
-            height: 98%
+          top: 5px
           &:before
             opacity: 0
             visibility: hidden
         .swiper-progress
           position: absolute
-          top: 0px
+          top: 15px
           left: 0
           width: 100%
           +center
@@ -98,9 +100,6 @@
           b
             padding: 0 
             font-weight: normal         
-        img
-          width: 100%
-          height: 95%
     strong
       font-size: 18px
       font-weight: 800
