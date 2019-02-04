@@ -70,7 +70,7 @@ if($('.swiper-mobile_tour').length) {
 
 var swiper2 = new Swiper('.swiper-animated', {
   slidesPerView: 'auto',
-  spaceBetween: 7,
+  spaceBetween: 3,
   loop: true,
   autoplay: {
     delay: 3000,
