@@ -73,7 +73,7 @@ var swiper2 = new Swiper('.swiper-animated', {
   spaceBetween: 3,
   loop: true,
   autoplay: {
-    delay: 3000,
+    delay: 2000,
     disableOnInteraction: false
   }
 });
