@@ -34,13 +34,12 @@
       align-items: center
       position: relative
       overflow: hidden
-      margin: 0 20px
       +r(767)
         justify-content: center
         margin-top: 40px
         overflow: visible
       img.bg
-        width: 38%
+        width: 40%
         margin-left: 8px
         max-width: 100%
         +r(500)
@@ -51,26 +50,28 @@
         top: 50%
         left: calc(50% + 3px)
         transform: translate(-50%, -50%)
-        width: 33.2%
+        width: 34.8%
         height: 75%
         overflow: visible
-        padding: 30px 7px 0
+        padding: 30px 12px 0
         +r(500)
           width: 217px
         .swiper-slide
-          top: 15px
+          top: 0px
           +tr
+          +center
           a
             display: block
             width: 100%
             height: 100%
           img
-            width: 100%
+            height: 100%
+            
             +tr
           &:before
             content: ''
             width: 100%
-            height: 90%
+            height: 100%
             position: absolute
             left: 0
             top: 0
@@ -79,16 +80,14 @@
             visibility: visible
             z-index: 2
             +tr
-            +r(500)
-              height: 88.5%
         .swiper-slide-active
-          top: 5px
+          top: -10px
           &:before
             opacity: 0
             visibility: hidden
         .swiper-progress
           position: absolute
-          top: 15px
+          top: 7px
           left: 0
           width: 100%
           +center

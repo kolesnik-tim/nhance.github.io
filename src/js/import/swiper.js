@@ -28,7 +28,7 @@ var galleryTop = new Swiper('.gallery-top', {
 //mobile-tour
 var swiper = new Swiper('.swiper-mobile_tour', {
   slidesPerView: 'auto',
-  spaceBetween: 46,
+  spaceBetween: 50,
   effect: 'coverflow',
   loopFillGroupWithBlank: true,
   loop: true,
