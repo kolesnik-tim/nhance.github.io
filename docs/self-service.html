@@ -123,82 +123,8 @@
 
     </script><noscript><img height="1" width="1" src="https://www.facebook.com/tr?id=1026308900893342&amp;ev=PageView&amp;noscript=1"></noscript><!-- End Facebook Pixel Code -->
     <meta name="p:domain_verify" content="b0915b6b6feb89e7384070124852c2b2">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"><!-- Load CSS & WebFonts Main Function-->
-    <script>
-      ! function(e)
-      {
-        "use strict";
-
-        function t(e, t, n)
-        {
-          e.addEventListener ? e.addEventListener(t, n, !1) : e.attachEvent && e.attachEvent("on" + t, n)
-        }
-
-        function n(t, n)
-        {
-          return e.localStorage && localStorage[t + "_content"] && localStorage[t + "_file"] === n
-        }
-
-        function a(t, a)
-        {
-          if (e.localStorage && e.XMLHttpRequest) n(t, a) ? o(localStorage[t + "_content"]) : l(t, a);
-          else
-          {
-            var s = r.createElement("link");
-            s.href = a, s.id = t, s.rel = "stylesheet", s.type = "text/css", r.getElementsByTagName("head")[0].appendChild(s), r.cookie = t
-          }
-        }
-
-        function l(e, t)
-        {
-          var n = new XMLHttpRequest;
-          n.open("GET", t, !0), n.onreadystatechange = function()
-          {
-            4 === n.readyState && 200 === n.status && (o(n.responseText), localStorage[e + "_content"] = n.responseText, localStorage[e + "_file"] = t)
-          }, n.send()
-        }
-
-        function o(e)
-        {
-          var t = r.createElement("style");
-          t.setAttribute("type", "text/css"), r.getElementsByTagName("head")[0].appendChild(t), t.styleSheet ? t.styleSheet.cssText = e : t.innerHTML = e
-        }
-        var r = e.document;
-        e.loadCSS = function(e, t, n)
-        {
-          var a, l = r.createElement("link");
-          if (t) a = t;
-          else
-          {
-            var o;
-            o = r.querySelectorAll ? r.querySelectorAll("style,link[rel=stylesheet],script") : (r.body || r.getElementsByTagName("head")[0]).childNodes, a = o[o.length - 1]
-          }
-          var s = r.styleSheets;
-          l.rel = "stylesheet", l.href = e, l.media = "only x", a.parentNode.insertBefore(l, t ? a : a.nextSibling);
-          var c = function(e)
-          {
-            for (var t = l.href, n = s.length; n--;)
-              if (s[n].href === t) return e();
-            setTimeout(function()
-            {
-              c(e)
-            })
-          };
-          return l.onloadcssdefined = c, c(function()
-          {
-            l.media = n || "all"
-          }), l
-        }, e.loadLocalStorageCSS = function(l, o)
-        {
-          n(l, o) || r.cookie.indexOf(l) > -1 ? a(l, o) : t(e, "load", function()
-          {
-            a(l, o)
-          })
-        }
-      }(this);
-
-    </script><!-- Load CSS Compiled without JS--><noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;amp;subset=cyrillic-ext"></noscript><!-- link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic-ext" rel="stylesheet")-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;amp;subset=cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" media="all" href="css/app.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   </head>
